@@ -1,0 +1,44 @@
+.loved{
+	display:block;
+	margin: 1000px auto;
+	border-style:solid;
+	border-width:5px;
+	height:400px;
+	width: 400px;
+	padding:10px;
+}
+
+div#first {
+	display:block;
+	margin: 200px auto;
+	border-style:solid;
+	border-width:5px;
+	height:400px;
+	width: 400px;
+	padding:10px;
+}
+
+.hated {
+	border-style:solid;
+	border-width:3px;             
+	height:300px;
+	width:300px;
+	padding:20px;
+	margin:auto;
+}
+
+.kissed {
+	border-style:solid;
+	border-width:1px;
+	height:200px;
+	width:200px;
+	padding:20px;
+	margin:auto;
+}
+
+.last {
+	height:300px;
+	width:300px;
+	margin:200px ;
+	text-align:center;
+}

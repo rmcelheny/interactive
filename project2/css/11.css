@@ -1,0 +1,47 @@
+
+body {
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.title {
+	position:fixed;
+	background-color:white;
+	padding:10px;
+	top:10px;
+	left:100px;
+}
+
+.menucontainer {
+	display:block;
+	position:fixed;
+	top:300px;
+	left:110px;
+	width: 600px;
+}
+
+.when {
+	position: fixed;
+	top:300px;
+	left: 100px;
+}
+
+.and {
+	position: fixed;
+	top:300px;
+	left: 500px;
+}
+
+.i {
+	display:inline-block;
+	margin-left:141px;
+	margin-top: 250px;
+	width: 250px;
+	margin-bottom:1000px;
+}
+
+.you {
+	display:inline-block;
+	margin-left:160px;
+	margin-bottom:1000px;
+}

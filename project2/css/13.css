@@ -1,0 +1,31 @@
+.poem {
+	width:50000px;
+}
+
+.list {
+	display: inline-block;
+	height: 200px;
+	width:800px;
+}
+
+.last {
+	position:top;
+}
+
+.and {
+	display: inline-block;
+	position:relative;
+	width:800px;
+	height:200px;
+}
+
+ul {
+	margin-top:-15px;
+}
+
+.and2{
+	display: block;
+	position:absolute;
+	top:100px;
+	margin:auto;
+}

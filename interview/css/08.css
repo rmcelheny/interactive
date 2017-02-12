@@ -1,0 +1,11 @@
+.commercial{
+	width:45%;
+	height:500px;
+	float:left;
+}
+
+.uncommercial {
+	width:45%;
+	height:500px;
+	float:right;
+}

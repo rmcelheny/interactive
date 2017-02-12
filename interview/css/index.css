@@ -1,0 +1,31 @@
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:25px;
+}
+
+
+.content {
+    	width:800px;
+    	margin-top:200px;
+    	margin-left:2em;
+   }
+
+.travis {
+	font-style:italic;
+	text-align:center;
+	color:blue;
+}
+
+.back {
+	font-size:25px;
+	position:fixed;
+	bottom:200px;
+	left:1em;
+}
+
+.next {
+	font-size:25px;
+	position:fixed;
+	bottom:200px;
+	right:1em;
+}

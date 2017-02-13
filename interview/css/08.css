@@ -1,11 +1,12 @@
-.commercial{
-	width:45%;
-	height:500px;
-	float:left;
+.commercial {
+	width:1000px;
 }
 
 .uncommercial {
-	width:45%;
-	height:500px;
-	float:right;
+	width:1000px;
+}
+
+img {
+	width:250px;
+	display:inline-block;
 }

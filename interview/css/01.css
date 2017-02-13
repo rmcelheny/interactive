@@ -6,15 +6,24 @@ body {
 
 .content {
     	width:800px;
-    	height: 800px;
+    	height: 500px;
     	margin-top:200px;
     	margin-left:2em;
    }
 
+#front {
+	padding-top:2em;
+	padding-bottom:4em;
+}
+
+#mission{
+	height:800px;
+}
+
 .travis {
 	font-style:italic;
 	color:blue;
-	width:800px;
+	width:700px;
 	margin-left:2em;
 }
 

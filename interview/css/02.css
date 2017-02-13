@@ -1,20 +1,7 @@
-.group {
+img {
+	display:inline-block;
 }
 
-.appendix {
-	width:45%;
-	height:500px;
-	float:left;
-}
-
-.extra {
-	width:45%;
-	float:right;
-	height:500px;
-}
-
-.both {
-	clear:both;
-	display: block;
-	height:500px;
+#bodybybody{
+	width:10000px;
 }

@@ -1,12 +1,8 @@
-.commercial {
-	width:1000px;
+.gallery {
+	width:10000px;
 }
 
-.uncommercial {
-	width:1000px;
-}
 
 img {
-	width:250px;
-	display:inline-block;
+	height:400px;
 }

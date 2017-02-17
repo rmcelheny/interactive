@@ -1,0 +1,67 @@
+
+.title {
+	position:fixed;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	font-size:200px;
+	text-align:left;
+	margin-top:-250px;
+	margin-left:-10px;
+	line-height:500px;
+	width:10000px;
+}
+
+body {
+	position:relative;
+}
+
+.container {
+	position:absolute;
+	top:100vw;
+	width:100vw;
+	margin-bottom:100vw;
+}
+
+.container .one{
+	font-family:"Courier New", Courier, monospace;
+	font-size:12px;
+	left:300px;
+	text-align:center;
+	margin:2em;
+}
+
+.container .two{
+	font-family:"Courier New", Courier, monospace;
+	font-size:5px;
+	left:10px;
+		text-align:center;	
+		margin:2em;
+}
+
+.container .three{
+	font-family:"Courier New", Courier, monospace;
+	font-size:24px;
+	left:49px;
+		text-align:center;
+			margin:2em;
+}
+
+.container .four{
+	font-family:"Courier New", Courier, monospace;
+	font-size:6px;
+	text-align:left;
+	left:369px;
+		text-align:center;
+			margin:2em;
+}
+
+
+.container .five{
+	font-family:"Courier New", Courier, monospace;
+	font-size:15px;
+	left:130px;
+		text-align:center;
+			margin:2em;
+}
+
+
+

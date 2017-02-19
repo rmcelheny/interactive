@@ -11,13 +11,18 @@
 .youcontainer {
 	position:absolute;
 	right:0;
+	top:54px;
 	text-align:right;
 }
 
 .icontainer .i {
 	font-family:Impact, Charcoal, sans-serif;
-	text-decoration:underline;
 	font-size:20px;
+}
+
+.icontainer p {
+	display:inline-block;
+	border-bottom:20px solid black;
 }
 
 .youcontainer .you {
@@ -25,5 +30,5 @@
 	font-style:italic;
 	letter-spacing:2px;
 	font-size:8px;
-	padding:7px;
+	padding-top:45px;
 }

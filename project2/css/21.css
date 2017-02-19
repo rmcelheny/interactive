@@ -1,0 +1,44 @@
+body {
+	position:relative;
+	font-family: "Courier New", Courier, monospace;
+	font-size:10px;
+	background-color:floralwhite;
+}
+
+table {
+	position:absolute;
+	width:90%;
+	margin-top:100px;
+	margin-left:5vw;
+}
+
+div {
+	padding:1em;
+	text-align:center;
+	min-height:50px;
+}
+
+.title {
+	border-width:1px;
+	border-color:black;
+}
+
+.pink {
+	background-color:pink;
+}
+
+.blue {
+	background-color:lightsteelblue;
+}
+
+.red {
+	background-color:rgba(255,34,0,0.7);
+}
+
+.green {
+	background-color:olivedrab;
+}
+
+.yellow {
+	background-color:gold;
+}

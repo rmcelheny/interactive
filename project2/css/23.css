@@ -1,0 +1,53 @@
+body {
+	width:100vw;
+	overflow-x:hidden;
+	position:relative;
+}
+
+div {
+	display:block;
+	height:20vw;
+	width:20vw;
+	float:left;
+	text-align:center;
+	font-family:courier;
+	font-size:12px;
+	line-height:12px;
+}
+
+.livid {
+	margin:-1px;
+	border-width:1px;
+	border-style:dotted;
+}
+
+.livid {
+	font-style:italic;
+}
+
+.soft {
+	border-radius:50%;
+	background-color:white;
+	position:relative;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+.soft p {
+	width:14vw;
+	position:absolute;
+	top:6vw;
+	left:3vw;
+	}
+
+.hard {
+	background-color:black;
+	color:white;
+	position:relative;
+}
+
+.hard p {
+	width:14vw;
+	position:absolute;
+	top:6vw;
+	left:3vw;
+}

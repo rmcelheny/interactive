@@ -1,0 +1,108 @@
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-color:rgba(0,0,0,0.4);
+	font-size:30px;
+	font-weight:bold;
+	color:white;
+}
+
+.title {
+	color:black;
+}
+
+.title:hover {
+	color:white;
+}
+
+.poem:hover {
+	background-color:white;
+}
+
+a:active {
+	color:black;
+}
+
+a {
+	color:white;
+}
+
+a:hover {
+	color:rgb(166, 109, 116	);
+}
+
+.softpink:hover {
+	color:rgb(166, 109, 116	);
+}
+.softyellow:hover {
+	color:rgb(220,	193,	58	);;
+}
+.softgreen:hover {
+	color:rgb(103,150,95	);
+}
+.softred:hover {
+	color:rgb(204,	92,	80	);
+}
+.softblue:hover {
+	color:rgb(141,	172,	220	);
+}
+
+
+.mellowyellow:hover {
+	background-color: rgb(220,	193,	58	);
+}
+.mellowblue:hover {
+	background-color:rgb(141,	172,	220	);
+}
+.mellowred:hover {
+	background-color:rgb(204,	92,	80	);
+}
+.mellowpink:hover {
+	background-color:rgb(166, 109, 116);
+}
+.mellowgreen:hover {
+	background-color:rgb(103,150,95	);
+}
+
+
+.hardgreen:hover {
+	color:black;
+	background-color:lime;
+}
+.hardpink:hover {
+	color:black;
+	background-color:rgb(255,0,255	);
+}
+.hardblue:hover {
+	color:black;
+	background-color:blue;
+}
+.hardyellow:hover {
+	color:black;
+	background-color: rgb(239,	255,	0	);
+}
+.hardred:hover {
+	color:black;
+	background-color:rgb(255,	0,	0	);
+}
+
+
+.lividgreen:hover {
+	color:rgb(103,150,95	);
+	background-color:lime;
+}
+.lividred:hover {
+	color:rgb(204,	92,	80	);
+	background-color:rgb(255,	0,	0	);
+}
+.lividyellow:hover {
+	color: rgb(220,	193,	58	);
+	background-color: rgb(239,	255,	0	);
+}
+.lividblue:hover {
+	background-color:rgb(141,	172,	220	);
+	background-color:blue;
+}
+.lividpink:hover {
+	color:rgb(166, 109, 116	);
+	background-color:rgb(255,0,255	);
+}

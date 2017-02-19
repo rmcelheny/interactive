@@ -1,0 +1,104 @@
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-color:rgba(0,0,0,0.4);
+	font-size:30px;
+	font-weight:bold;
+}
+
+.title {
+	color:black;
+}
+
+.poem {
+	background-color:white;
+}
+
+a:active {
+	color:rgb(166, 109, 116	);
+}
+
+a {
+	color:rgb(166, 109, 116	);
+}
+
+a:visited {
+	text-decoration:none;
+	color:rgb(166, 109, 116	);
+}
+
+.softpink {
+	color:rgb(166, 109, 116	);
+}
+.softyellow {
+	color:rgb(220,	193,	58	);;
+}
+.softgreen {
+	color:rgb(103,150,95	);
+}
+.softred {
+	color:rgb(204,	92,	80	);
+}
+.softblue {
+	color:rgb(141,	172,	220	);
+}
+
+
+.mellowyellow {
+	background-color: rgb(220,	193,	58	);
+}
+.mellowblue {
+	background-color:rgb(141,	172,	220	);
+}
+.mellowred {
+	background-color:rgb(204,	92,	80	);
+}
+.mellowpink {
+	background-color:rgb(166, 109, 116);
+}
+.mellowgreen {
+	background-color:rgb(103,150,95	);
+}
+
+
+.hardgreen {
+	color:black;
+	background-color:lime;
+}
+.hardpink {
+	color:black;
+	background-color:rgb(255,0,255	);
+}
+.hardblue {
+	color:black;
+	background-color:blue;
+}
+.hardyellow {
+	color:black;
+	background-color: rgb(239,	255,	0	);
+}
+.hardred {
+	color:black;
+	background-color:rgb(255,	0,	0	);
+}
+
+
+.lividgreen {
+	color:rgb(103,150,95	);
+	background-color:lime;
+}
+.lividred {
+	color:rgb(204,	92,	80	);
+	background-color:rgb(255,	0,	0	);
+}
+.lividyellow {
+	color: rgb(220,	193,	58	);
+	background-color: rgb(239,	255,	0	);
+}
+.lividblue {
+	background-color:rgb(141,	172,	220	);
+	background-color:blue;
+}
+.lividpink {
+	color:rgb(166, 109, 116	);
+	background-color:rgb(255,0,255	);
+}

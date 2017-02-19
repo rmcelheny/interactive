@@ -9,23 +9,28 @@ div {
 	height:20vw;
 	width:20vw;
 	float:left;
-	text-align:center;
 	font-family:courier;
 	font-size:12px;
 	line-height:12px;
 }
 
 .livid {
-	margin:-1px;
+/*	margin:-1px;
 	border-width:1px;
-	border-style:dotted;
+	border-style:dotted;*/
+	position:relative;
 }
 
-.livid {
+.livid p {
+	text-align:left;
 	font-style:italic;
+	position:absolute;
+	left:0;
+	top:-12px;
 }
 
 .soft {
+
 	border-radius:50%;
 	background-color:white;
 	position:relative;
@@ -34,14 +39,16 @@ div {
 
 .soft p {
 	width:14vw;
+	text-align:center;
 	position:absolute;
 	top:6vw;
 	left:3vw;
 	}
 
 .hard {
-	background-color:black;
-	color:white;
+	/*background-color:black;
+		color:white;*/
+	text-align:center;
 	position:relative;
 }
 
@@ -50,4 +57,25 @@ div {
 	position:absolute;
 	top:6vw;
 	left:3vw;
+	border-bottom:12px solid black;
+}
+
+.mellow {
+	position:relative;
+}
+
+.mellow p {
+	text-align:center;
+	position:absolute;
+	top:6vw;
+	left:3vw;
+}
+
+#first {
+	position:relative;
+}
+
+#first p {
+	position:absolute;
+	top:6vw;
 }

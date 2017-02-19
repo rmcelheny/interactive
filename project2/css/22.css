@@ -1,0 +1,80 @@
+.container {
+	height:100vw;
+	width:100vw;
+	position:fixed;
+	top:0;
+	left:0;
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, black, navy);
+}
+
+.circle {
+	border-radius:50%;
+	width:650px;
+	height:650px;
+	background: radial-gradient(rgba(193,	116,	154,1), rgba(193,	116,	154,0)); 
+	margin-top:100px;
+	position:relative;
+}
+
+.poem {
+    top: 18px;
+    height: 1000px;
+    font-size: 10px;
+    line-height: 10px;
+    position: absolute;
+    left: 265px;
+	-ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
+    transform: rotate(-8deg);
+
+    }
+
+ .header {
+ 	position:fixed;
+ 	top:0;
+ 	height:100px;
+ 		z-index:100;
+ }
+ .header .headleft {
+ 	float:left;
+ 	width:33vw;
+ 	text-align:left;
+ 	color:white;
+ }
+ .header .headcenter {
+ 	float:left;
+ 	width:33vw;
+ 	text-align:center;
+ 		color:white;
+ }
+  .header .headright {
+ 	float:left;
+ 	width:33vw;
+ 	text-align:right;
+ 		color:white;
+ }
+
+ .footer {
+ 	position:fixed;
+ 	bottom:0;
+ 	width:100vw;
+ 	z-index:100;
+ }
+
+ .footer .footerleft {
+ 	float:left;
+ 	width:50vw;
+ 	color:white;
+ }
+
+ .footer .footerright {
+ 	float:left;
+ 	width:50vw;
+ 	text-align:right;
+ 	color:white;
+  }

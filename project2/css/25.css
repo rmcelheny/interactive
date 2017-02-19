@@ -1,0 +1,29 @@
+body {
+	position:relative;
+}
+
+.icontainer {
+	position:fixed;
+	left:28vw;
+	top:29px;
+	text-align:left;
+	transform:rotateY(180deg);
+}
+
+.youcontainer {
+	position:fixed;
+	right:28vw;
+	top:28px;
+	text-align:right;
+	transform:rotateY(180deg);
+}
+
+.icontainer .i:hover {
+	transform:rotateY(180deg);
+	text-align:right;
+}
+
+.youcontainer .you:hover {
+	transform:rotateY(180deg);
+	text-align:left;
+}

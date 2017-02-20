@@ -5,17 +5,28 @@ body {
 .container {
 	position:absolute;
 	top:50px;
-	left:200px;
+	margin-bottom:100px;
+	left:350px;
+	width:423px;
 }
 
+h4 {
+	font-family:arial;
+	text-align:center;
+}
 
 .i {
+	font-family:arial;
+	font-size:15px;
+	line-height:13px;
 	float:left;
-	width:50%;
 }
 
 .you {
+	font-family:arial;
+	font-size:15px;
+	line-height:13px;
 	float:right;
-	width:50%;
+	width:55%;
 	text-align:right;
 }

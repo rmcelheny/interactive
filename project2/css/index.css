@@ -1,4 +1,13 @@
+.navheader {
+	z-index:1111;
+}
+
+.navfooter {
+	z-index:11111;
+}
+
 .poemcontainer {
+	z-index:1;
 	position:relative;
 }
 

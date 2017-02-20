@@ -1,15 +1,19 @@
-a {
+.poemcontainer a {
 	color:red;
 	text-decoration:none;
 }
 
-.poemcontainer {
-	position:relative;
-	height: 900px;
-    bottom: 200px;}
+.poemcontainer a:visited {
+	color:red;
+}
+
+.poemcontainer a:active {
+	color:red;
+}
+
 
 #first {
-	top:0;
+	top:100;
 	height:100px;
 	font-family:Arial, Helvetica, sans-serif;
 	margin-left:auto;
@@ -35,7 +39,7 @@ h2 {
 	width:50%;
 	top:220px;
 	left:0;
-	bottom:0;
+	bottom:100px;
 	overflow-y:scroll;
 }
 
@@ -44,7 +48,7 @@ h2 {
 	width:50%;
 	top:220px;
 	right:0;
-	bottom:0;
+	bottom:100px;
 	overflow-y:scroll;
 }
 

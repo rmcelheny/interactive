@@ -2,17 +2,19 @@ body {
 	position:relative;
 }
 
+.navcontainer {
+	z-index:100000;
+}
 
 .poemcontainer {
 	z-index:1;
 	position:absolute;
-	width:100vw;
-	height:100vw;
+	width:100%;
 	top:0;
 	left:0;
 }
 
-div {
+.poemcontainer div {
 	width:250px;
 	height:250px;
 	display: block;

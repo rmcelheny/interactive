@@ -1,7 +1,5 @@
 body {
 	position:relative;
-	font-family: "Courier New", Courier, monospace;
-	font-size:10px;
 	background-color:floralwhite;
 }
 
@@ -13,6 +11,8 @@ body {
 	position:absolute;
 	top:200px;
 	margin-left:200px;
+	font-family: "Courier New", Courier, monospace;
+	font-size:10px;
 }
 
 table {

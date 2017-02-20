@@ -2,18 +2,22 @@ body {
 	position:relative;
 }
 
+.container {
+	position:absolute;
+	top:100px;
+	width:100%;
+}
+
 .icontainer {
-	position:fixed;
-	left:28vw;
-	top:29px;
+	float:left;
+	width:50%;
 	text-align:left;
 	transform:rotateY(180deg);
 }
 
 .youcontainer {
-	position:fixed;
-	right:28vw;
-	top:28px;
+	float:right;
+	width:49%;
 	text-align:right;
 	transform:rotateY(180deg);
 }

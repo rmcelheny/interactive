@@ -36,6 +36,12 @@ a:active {
 	opacity:0;
 }
 
+.navheader .back a {
+	-ms-transform: rotate(-90deg); /* IE 9 */
+	-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+	transform: rotate(-90deg);
+}
+
 .navright {
 	width:100px;
 	position:fixed;
@@ -62,6 +68,23 @@ a:active {
 	opacity:0;
 }
 
+.navright .next a {
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+	transform: rotate(90deg);
+}
+
+.navright .back a {
+	-ms-transform: rotate(-90deg); /* IE 9 */
+	-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+	transform: rotate(-90deg);
+}
+
+/*
+&#60; = left pointing
+&#62; = right pointing
+*/
+
 .navfooter {
 	width:100%;
 	height:5vw;
@@ -86,6 +109,20 @@ a:active {
 .navfooter .hide {
 	opacity:0;
 }
+
+.navfooter .next a {
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+	transform: rotate(90deg);
+}
+
+.navfooter .back a {
+	-ms-transform: rotate(-90deg); /* IE 9 */
+	-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+	transform: rotate(-90deg);
+}
+
+
 
 .navleft {
 	width:100px;
@@ -112,6 +149,20 @@ a:active {
 .navleft .hide {
 	opacity:0;
 }
+
+.navleft .next a {
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+	transform: rotate(90deg);
+}
+
+.navleft .back a {
+	-ms-transform: rotate(-90deg); /* IE 9 */
+	-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+	transform: rotate(-90deg);
+	z-index:1111111;
+}
+
 
 
 #pink {

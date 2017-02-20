@@ -32,6 +32,10 @@ a:active {
 	justify-content:center;
 }
 
+.navheader .hide {
+	opacity:0;
+}
+
 .navright {
 	width:100px;
 	position:fixed;
@@ -52,6 +56,10 @@ a:active {
 	display:flex;
 	align-items:center;
 	justify-content:center;
+}
+
+.navright .hide {
+	opacity:0;
 }
 
 .navfooter {
@@ -75,6 +83,10 @@ a:active {
 	justify-content:center;
 }
 
+.navfooter .hide {
+	opacity:0;
+}
+
 .navleft {
 	width:100px;
 	position:fixed;
@@ -95,4 +107,15 @@ a:active {
 	display:flex;
 	align-items:center;
 	justify-content:center;
+}
+
+.navleft .hide {
+	opacity:0;
+}
+
+
+#pink {
+	background-color:pink;
+	color:rgb(255,0,255);
+	border-color:rgb(255,0,255);
 }

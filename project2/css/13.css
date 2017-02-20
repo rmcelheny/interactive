@@ -1,5 +1,14 @@
+body {
+	position:relative;
+}
+
+.poemcontainer {
+	position:absolute;
+	top:200px;
+}
+
 .poem {
-	width:50000px;
+	width:11000px;
 }
 
 .list {
@@ -28,4 +37,18 @@ ul {
 	position:absolute;
 	top:100px;
 	margin:auto;
+}
+
+.end {
+	display:inline-block;
+	font-size:100px;
+	}
+
+.end a{
+	text-decoration:underline;
+	color:blue;
+}
+
+.end a:visited {
+	color:purple;
 }

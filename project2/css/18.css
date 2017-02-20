@@ -6,8 +6,21 @@
 	z-index:444;
 }
 
-.container {
+.navheader {
+	z-index:11111;
+}
+
+.navfooter{
+	z-index:11111;
+}
+
+body {
 	position:relative;
+}
+
+.container {
+	position:absolute;
+	top:200px;
 	width: 16500px;
 }
 

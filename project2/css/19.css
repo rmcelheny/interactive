@@ -14,6 +14,10 @@ body {
 	position:relative;
 }
 
+.navfooter {
+	z-index:11111;
+}
+
 .container {
 	position:absolute;
 	top:100vw;

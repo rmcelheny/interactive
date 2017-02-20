@@ -3,6 +3,11 @@ a {
 	text-decoration:none;
 }
 
+.poemcontainer {
+	position:relative;
+	height: 900px;
+    bottom: 200px;}
+
 #first {
 	top:0;
 	height:100px;
@@ -25,6 +30,7 @@ h2 {
 }
 
 .i {
+	z-index:1;
 	position:absolute;
 	width:50%;
 	top:220px;

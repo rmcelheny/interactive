@@ -5,17 +5,38 @@ body {
 	background-color:floralwhite;
 }
 
-table {
+
+
+.poemcontainer {
+	width:850px;
+	height:850px;
 	position:absolute;
-	width:90%;
-	margin-top:100px;
-	margin-left:5vw;
+	top:200px;
+	margin-left:200px;
 }
 
-div {
+table {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+table div {
 	padding:1em;
 	text-align:center;
 	min-height:50px;
+}
+
+.navheader {
+	z-index:111111;
+}
+
+.navfooter {
+	z-index:111111;
+}
+
+.navleft {
+	z-index:111111;
+	position:absolute;
 }
 
 .title {

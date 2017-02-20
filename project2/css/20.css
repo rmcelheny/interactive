@@ -1,18 +1,36 @@
+.navheader {
+	z-index:11111;
+}
+
+.navfooter {
+	z-index:11111;
+}
+
+.navleft {
+	z-index:11111;
+}
+
 .container {
-	position:relative;
+	position:absolute;
+	top:200px;
+	margin-bottom:200px;
+	width:100vw;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+	align-content:stretch;
 }
 
 .icontainer {
-	position:absolute;
-	left:0;
-	text-align:left;
+	flex-basis:24vw;
+	text-align:center;
 }
 
 .youcontainer {
-	position:absolute;
-	right:0;
-	top:54px;
-	text-align:right;
+	flex-basis:24vw;
+	text-align:center;
 }
 
 .icontainer .i {
@@ -28,7 +46,8 @@
 .youcontainer .you {
 	font-family:"Courier New", Courier, monospace;
 	font-style:italic;
-	letter-spacing:2px;
+	letter-spacing:4px;
+	line-height:40px;
 	font-size:8px;
 	padding-top:45px;
 }

@@ -1,0 +1,201 @@
+
+.centralized {
+    width:250px;
+    height:400px;
+    position:relative;
+    top:100px;
+    left:100px;
+    z-index:2;
+}
+
+.decentralized {
+    width:250px;
+    height:400px;
+    position:fixed;
+    top:108px;
+    left:108px;
+    z-index:1;
+    display:none;
+}
+
+
+#centralized:active {
+    display:none;
+}
+
+#centralized:active #decentralized {
+    display:block;
+}
+
+
+.container {
+	height:160px;
+	width:80px;
+	display:inline-block;
+	position:relative;
+}
+
+.nodeball {
+	border-radius:50%;
+	width:12px;
+	height:12px;
+	border-width:2px;
+	border-color:black;
+	border-style:solid;
+	position:absolute;
+	background-color:white;
+	left:0px;
+	top:0px;
+}
+
+.noderule {
+	width:64px;
+	height:7px;
+	border-bottom:2px black solid;
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+
+.topleftnode {
+    width: 80px;
+    height: 16px;
+    position: relative;
+    top: -12px;
+    left: -4px;
+    transform: rotate(64deg);
+    transform-origin: bottom left;
+}
+
+.toprightnode {
+    width: 80px;
+    height: 16px;
+    position: relative;
+    top: -35px;
+    right: -69px;
+    transform: rotate(116deg);
+    transform-origin: bottom left;
+}
+
+.bottomleftnode {
+	width: 80px;
+    height: 16px;
+    position: relative;
+    top: 104px;
+    left: 10px;
+    transform: rotate(297deg);
+    z-index: 43;
+    transform-origin: bottom left;
+}
+
+.bottomrightnode {
+	    width: 80px;
+    height: 16px;
+    position: absolute;
+    bottom: 15px;
+    right: -83px;
+    transform: rotate(-116deg);
+    z-index: 43;
+    transform-origin: bottom left;
+}
+
+.midleftnode {
+	width: 80px;
+    height: 16px;
+    position: relative;
+    top: 16px;
+    left: 0px;
+    transform: rotate(0deg);
+    transform-origin: bottom left;
+}
+
+
+.midrightnode {
+	width: 80px;
+    height: 16px;
+    position: relative;
+    top: -16px;
+    left: 80px;
+    transform: rotate(180deg);
+    transform-origin: bottom left;
+    z-index:43;
+}
+
+.midtopnode {
+	width: 80px;
+    height: 16px;
+    position: absolute;
+    top: -16px;
+    left: 32px;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    z-index:43;
+}
+
+
+.centernode {
+	position: absolute;
+	top:64px;
+	left:32px;
+	z-index:44;
+}
+
+.midbottomnode {
+	width: 80px;
+    height: 16px;
+    position: absolute;
+    bottom: 10px;
+    left: 48px;
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    z-index: 43;
+}
+
+/*DECENTRALIZED*/
+
+
+
+
+
+.borderleft {
+    height: 138px;
+    width: 66px;
+    border-left: 2px black solid;
+    border-top: 2px black solid;
+    margin-left: 6px;
+    margin-top: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.borderhalfright {
+    height:70px;
+    width:72px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right:2px solid black;
+}
+
+.bordertop {
+    height: 138px;
+    width: 66px;
+    border-top: 2px black solid;
+    margin-left: 6px;
+    margin-top: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.borderbottom {
+    height: 138px;
+    width: 66px;
+    border-bottom: 2px black solid;
+    margin-left: 6px;
+    margin-top: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

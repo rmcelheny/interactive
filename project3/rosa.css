@@ -1,0 +1,151 @@
+body {
+	background-color:black;
+
+}
+
+/*.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	position: relative;
+}*/
+/*
+.word {
+	width:1500px;
+	position:absolute;
+	top:200px;
+	left:100px;
+	transform:rotate(-50deg);
+}
+*/
+.container {
+	height:750px;
+	width:250px;
+	margin:50px;
+	position:relative;
+	display:inline-block;
+}
+
+.o {
+    width: 250px;
+    height: 750px;
+    background-color: white;
+    box-shadow: 0 0 20px 10px white;
+    border-radius: 50%;
+}
+
+.ocounter {
+	width: 200px;
+    height: 700px;
+    background-color: black;
+    box-shadow: 0 0 20px 10px black;
+    border-radius: 50%;
+    position:absolute;
+   	top: 23px;
+    left: 24px;
+}
+
+.left {
+	width:10px;
+	height:750px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color:white;
+	box-shadow: 0 0 20px 10px white;
+}
+
+.rupper {
+	width: 250px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 0 0 20px 10px white;
+    position:absolute;
+    top:0px;
+    right:0px;
+    border-top-right-radius:200px;
+    border-bottom-right-radius:200px;
+}
+
+.ruppercounter {
+	width: 212px;
+    height: 212px;
+    background-color: black;
+    box-shadow: 0 0 19px 10px black;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.rlower {
+	width: 10px;
+    height: 521px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 20px 10px white;
+    bottom: 0px;
+    right: 129px;
+    transform: rotate(-23deg);
+}
+
+.stop {
+	width: 240px;
+    height: 375px;
+    background-color: white;
+        box-shadow: 0 0 20px 10px white;
+    position:absolute;
+    top:0px;
+    left:0px;
+    border-top-left-radius:125px;
+    border-bottom-left-radius:125px;
+}
+
+.stopcounter {
+	width: 249px;
+    height: 355px;
+    background-color: black;
+    box-shadow: 0 0 20px 10px black;
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    border-top-left-radius: 125px;
+    border-bottom-left-radius:125px;
+}
+
+.sbottom {
+	width: 150px;
+    height: 375px;
+    background-color: white;
+        box-shadow: 0 0 20px 10px white;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    border-top-right-radius:125px;
+    border-bottom-right-radius:125px;
+  }
+
+.sbottomcounter {
+	
+}
+
+  .aleft {
+  	width:100px;
+	height:750px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color:white;
+	transform:rotate(8deg);
+  }
+
+.aright {
+  	width:100px;
+	height:750px;
+	position:absolute;
+	top:0px;
+	right:0px;
+	background-color:white;
+	transform:rotate(-8deg);
+  }

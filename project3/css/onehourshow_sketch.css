@@ -1,4 +1,10 @@
 body {
-	margin-left:210px;
-	margin-right:0;
+	position:relative;
+}
+
+#line1 {
+	position:absolute;
+	left:100px;
+	top:100px;
+	overflow-x:scroll;
 }

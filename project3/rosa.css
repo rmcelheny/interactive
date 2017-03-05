@@ -91,7 +91,7 @@ body {
 }
 
 .stop {
-	width: 240px;
+	width: 180px;
     height: 375px;
     background-color: white;
         box-shadow: 0 0 20px 10px white;
@@ -118,34 +118,44 @@ body {
 	width: 150px;
     height: 375px;
     background-color: white;
-        box-shadow: 0 0 20px 10px white;
+    box-shadow: 0 0 20px 10px white;
     position:absolute;
-    bottom:0px;
+    bottom:4px;
     right:0px;
     border-top-right-radius:125px;
     border-bottom-right-radius:125px;
   }
 
 .sbottomcounter {
-	
+	width: 249px;
+    height: 355px;
+    background-color: black;
+    box-shadow: 0 0 20px 10px black;
+    position: absolute;
+    bottom: 14px;
+    right: 15px;
+    border-top-right-radius: 125px;
+    border-bottom-right-radius:125px;
 }
 
   .aleft {
-  	width:100px;
+  	width:10px;
 	height:750px;
 	position:absolute;
 	top:0px;
-	left:0px;
+	left:13px;
 	background-color:white;
-	transform:rotate(8deg);
+    box-shadow: 0 0 20px 10px white;
+	transform:rotate(14deg);
   }
 
 .aright {
-  	width:100px;
+  	width:10px;
 	height:750px;
 	position:absolute;
 	top:0px;
-	right:0px;
+	right:13px;
 	background-color:white;
-	transform:rotate(-8deg);
+    box-shadow: 0 0 20px 10px white;
+	transform:rotate(-14deg);
   }

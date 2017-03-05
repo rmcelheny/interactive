@@ -1,0 +1,17 @@
+.word {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:space-around;
+	width:100%;
+}
+
+.letter {
+	display:inline-block;
+	width:180px;
+}
+
+.Y td {
+	overflow-y:scroll;
+}
+

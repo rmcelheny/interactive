@@ -1,0 +1,508 @@
+html, body {
+  height: 100%;  
+  overflow: hidden;
+}
+
+.letter {
+	display: inline-block;
+	vertical-align: top;
+/*	width: 15%;*/
+	width:100px;
+	height: 20%;
+	position: relative;
+	margin-right: 1%;
+	margin-bottom: 1%;
+/*	background-color:red;*/
+}
+
+.letter-inside {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.a .left-diag {
+	width: 4%;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    transform: rotate(13deg);
+    transform-origin:bottom;
+}
+
+.a .right-diag {
+	width: 4%;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0;
+    transform: rotate(-13deg);
+    transform-origin:bottom;
+}
+
+.a .middle-a {
+	height:3%;
+	width:45%;
+	top:35%;
+	background-color:green;
+	position:absolute;
+}
+
+.b .left {
+	width:4%;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.b .diag-up {
+	height:4%;
+	width:92%;
+	position:absolute;
+	top:2%;
+	left:0;
+	background-color:green;
+	transform: rotate(22deg);
+	transform-origin:0 0;
+}
+
+.b .diag-down {
+	height:4%;
+	width:89%;
+	position:absolute;
+	top:27%;
+	left:0;
+	background-color:green;
+	transform: rotate(-22deg);
+/*	transform-origin:0 100;*/
+}
+
+#bbottom {
+	top:35%;
+}
+
+#bbbottom {
+	top:88%;
+}
+
+.b-mid-right {
+	width: 4%;
+    position: absolute;
+    top: 52%;
+    bottom: 15%;
+    right: 14%;
+    background-color: green;
+}
+
+/*.b .diag-up-lower {
+	height:4%;
+	width:89%;
+	position:absolute;
+	top:48%;
+	left:0;
+	background-color:green;
+	transform: rotate(22deg);
+	transform-origin:0 0;
+}
+
+.b .diag-down-lower {
+	height:4%;
+	width:89%;
+	position:absolute;
+	bottom:12%;
+	left:0;
+	background-color:green;
+	transform: rotate(-22deg);
+	transform-origin:bottom;
+}*/
+
+.c .left {
+	width:4%;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.c .top {
+	height:4%;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	right:0;
+}
+
+.c .bottom {
+	height:4%;
+	background:green;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.d .left {
+	width:4%;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.d .diag-up {
+	height:4%;
+	width:80%;
+	position:absolute;
+	top:2%;
+	left:0;
+	background-color:green;
+	transform: rotate(22deg);
+	transform-origin:0 0;
+}
+
+.d .diag-down-lower {
+	height:4%;
+	width:80%;
+	position:absolute;
+	bottom:12%;
+	left:0;
+	background-color:green;
+	transform: rotate(-22deg);
+	transform-origin:bottom;
+}
+
+.d .mid-right {
+	width:4%;
+	position:absolute;
+	top: 24%;
+    bottom: 22%;
+	right:24%;
+	background-color: green;
+}
+
+.e .left {
+	width:4%;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.e .top {
+	height:4%;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	right:0;
+}
+
+.e .bottom {
+	height:4%;
+	background:green;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.e .middle-e {
+	height:4%;
+	background:green;
+	position:absolute;
+	bottom:46%;
+	left:0;
+	right:0;
+}
+
+.f .left {
+	width:4%;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.f .top {
+	height:4%;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	right:0;
+}
+
+.f .middle-e {
+	height:4%;
+	background:green;
+	position:absolute;
+	bottom:46%;
+	left:0;
+	right:0;
+}
+
+.g .left {
+	width:4%;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.g .bottom {
+	height:4%;
+	background:green;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.g .right-g {
+	width:4%;
+	background:green;
+	position:absolute;
+	bottom:0;
+	top:50%;
+	right:0;
+}
+
+.g .hook-g {
+	height:4%;
+	background:green;
+	position:absolute;
+	top:50%;
+	left:75%;
+	right:0;
+}
+
+.g .top {
+	height:4%;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	right:0;
+}
+
+.w .left {
+	width:4%;
+	background:green;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+}
+	/*-webkit-animation: spin 60s infinite linear;
+	-moz-animation: spin 60s infinite linear;
+	-o-animation: spin 60s infinite linear;
+	-ms-animation: spin 60s infinite linear;
+}
+
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); -webkit-transform-origin:bottom left;}
+	100% { -webkit-transform: rotate(360deg); -webkit-transform-origin:bottom left;}
+}*/
+
+.w .right {
+	width:4%;
+	background-color:green;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+}
+	/*-webkit-animation: spin 60s infinite linear;
+	-moz-animation: spin 60s infinite linear;
+	-o-animation: spin 60s infinite linear;
+	-ms-animation: spin 60s infinite linear;
+}
+
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); -webkit-transform-origin:bottom left;}
+	100% { -webkit-transform: rotate(360deg); -webkit-transform-origin:bottom left;}
+}
+
+.left:hover  {
+	-webkit-animation: spin 1s infinite linear;
+	-moz-animation: spin 1s infinite linear;
+	-o-animation: spin 1s infinite linear;
+	-ms-animation: spin 1s infinite linear;
+}
+
+.right:hover {
+	-webkit-animation: spin 1s infinite linear;
+	-moz-animation: spin 1s infinite linear;
+	-o-animation: spin 1s infinite linear;
+	-ms-animation: spin 1s infinite linear;
+}*/
+
+.w .right-diag {
+    width: 4%;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0;
+    transform: rotate(-13deg);
+    transform-origin:bottom;
+}
+
+.w .left-diag {
+    width: 4%;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    transform: rotate(13deg);
+    transform-origin:bottom;
+}
+
+.i .middle {
+	width:4%;
+	background-color:green;
+	position:absolute;
+	top:0;
+	bottom:0;
+}
+
+/*.top {
+	width:65px;
+	height:10px;
+	background-color:green;
+	position:absolute;
+	top:0;
+	left:10px;
+}
+
+.bottom {
+	width:65px;
+	height:10px;
+	background-color:green;
+	position:absolute;
+	top:90px;
+	left:10px;
+}
+
+.middle {
+	width:65px;
+	height:10px;
+	background-color:green;
+	position:absolute;
+	top:40px;
+	left:10px;
+}
+
+.righthalf {
+	height:50px;
+	width:10px;
+	background-color:green;
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+
+.upmid {
+	height:100px;
+	width:10px;
+	background-color:green;
+	position:absolute;
+	top:0px;
+	left:32px;
+}
+
+.diagonal {
+	height:100px;
+	width:10px;
+	background-color:green;
+	position:absolute;
+	top:0px;
+	left:0px;
+	transform: rotate(30deg);
+}
+
+.diaghalf {
+    width: 65px;
+    height: 10px;
+    background-color: green;
+    position: absolute;
+    top: 24px;
+    left: -54px;
+    transform: rotate(-105deg);
+}
+
+.topo {
+	width:55px;
+	height:10px;
+	background-color:green;
+	position:absolute;
+	top:0;
+	left:10px;
+}
+
+.bottomo {
+	width:55px;
+	height:10px;
+	background-color:green;
+	position:absolute;
+	top:90px;
+	left:10px;
+}
+
+.topk {
+    width: 65px;
+    height: 10px;
+    background-color: green;
+    position: absolute;
+    top: 24px;
+    left: 10px;
+    transform: rotate(-38deg);
+}
+
+.bottomk {
+	width: 65px;
+    height: 10px;
+    background-color: green;
+    position: absolute;
+    bottom: 24px;
+    left: 10px;
+    transform: rotate(38deg);
+}
+
+.lefta {
+	height: 100px;
+    width: 10px;
+    background-color: green;
+    position: absolute;
+    top: 0px;
+    left: 14px;
+    transform: rotate(15deg);
+}
+
+.righta {
+
+}
+
+.middlea {
+	width:25px;
+	height:10px;
+	background-color:green;
+	position:absolute;
+	top:40px;
+	left:25px;
+}*/
+

@@ -1,3 +1,11 @@
+audio {
+	display:none;
+}
+
+a {
+	text-decoration:none;
+}
+
 .onehourshow {
 	width:100vw;
 	top:0;

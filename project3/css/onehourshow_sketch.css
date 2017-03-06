@@ -24,7 +24,7 @@ a {
 }
 
 .show {
-	margin-left:10%;
+	margin-left:9%;
 	display:block;
 }
 
@@ -54,18 +54,6 @@ a {
 
 .onesecondshow {
 	margin-bottom:300px;
-}
-
-.onesecondshow .spin {
-	-webkit-animation: spin 1s infinite linear;
-	-moz-animation: spin 1s infinite linear;
-	-o-animation: spin 1s infinite linear;
-	-ms-animation: spin 1s infinite linear;
-}
-
-@-webkit-keyframes spin {
-	0% { -webkit-transform: rotate(0deg); -webkit-transform-origin:bottom left;}
-	100% { -webkit-transform: rotate(360deg); -webkit-transform-origin:bottom left;}
 }
 
 

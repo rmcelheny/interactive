@@ -1,0 +1,131 @@
+body {
+	background: black;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: linear-gradient(to right, rgba(138, 92, 63, 1), rgb(190, 250, 255));
+	position: relative;
+}
+
+#mirror {
+	position:absolute;
+	bottom:100px;
+	left:186px;
+	z-index:1;
+	border-bottom: 300px solid gray;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0px;
+	width: 450px;
+}
+
+#orb {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 225px;
+    top: 35px;
+    z-index: 2;
+}
+
+#squash {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(251, 180, 75);
+    position: absolute;
+    right: 341px;
+    top: 204px;
+    z-index: 3;
+}
+
+#clementine {
+    width: 75px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(255, 101, 0);
+    position: absolute;
+    right: 456px;
+    top: 309px;
+    z-index: 5;
+}
+
+#vase {
+	width: 75px;
+    height: 250px;
+    background-color: rgba(214, 212, 212, .2);
+    bottom: 192px;
+    left: 300px;
+    position: absolute;
+    z-index: 4;
+}
+
+.flower-container {
+	height:300px;
+	width:10px;
+	position:absolute;
+	bottom:0;
+	left:10px;
+	-ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+    transform: rotate(2deg);
+}
+
+#two {
+	left:25px;
+	-ms-transform: rotate(5deg); /* IE 9 */
+    -webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+    transform: rotate(5deg);
+}
+
+#three {
+	left:35px;
+	-ms-transform: rotate(3deg); /* IE 9 */
+    -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+    transform: rotate(3deg);
+}
+
+#four {
+	left:0px;
+	-ms-transform: rotate(-3deg); /* IE 9 */
+    -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+    transform: rotate(-3deg);
+}
+
+.stem {
+	height:275px;
+	width:10px;
+	background:linear-gradient(green, #daff8e);
+	position:absolute;
+	bottom:0;
+}
+
+.flower {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid yellow;
+	position: absolute;
+	top:0;
+	right:2px;
+	-ms-transform: rotate(17deg); /* IE 9 */
+    -webkit-transform: rotate(17deg); /* Chrome, Safari, Opera */
+    transform: rotate(17deg);
+}
+
+
+#circle {
+	width: 200px;
+	height: 200px;
+	background: blue;
+	border-radius: 200px;
+	top: 160px;
+	left: 600px;
+	position: absolute;
+}

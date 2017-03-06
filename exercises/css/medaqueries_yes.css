@@ -1,0 +1,23 @@
+body {
+	overflow:hidden;
+}
+
+.word {
+	font-size:2px;
+}
+
+@media screen and (max-width: 768px) {
+  .word { font-size:10px; }
+}
+
+@media screen and (max-width: 600px) {
+  .word { font-size:25px; }
+}
+
+@media screen and (max-width: 480px) {
+  .word { font-size:100px; }
+}
+
+@media screen and (max-width: 320px) {
+  .word { font-size:1000px; }
+ }

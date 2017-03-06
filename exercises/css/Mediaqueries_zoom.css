@@ -1,0 +1,75 @@
+.word {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vw;
+    background-color: red;
+    overflow: hidden;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    align-content:stretch;
+    justify-content:space-around;
+}
+
+table {
+	height:100vw;
+}
+
+td {
+	height:20vw;
+	overflow:hide;
+	vertical-align:top;
+}
+
+.y {
+	display: inline-block;
+    width: 20vw;
+    height: 100vw;
+    font-size: 2px;
+    background-color: pink;
+}
+
+.e {
+	display: inline-block;
+    width: 20vw;
+    height: 100vw;
+    font-size: 2px;
+    background-color: pink;
+}
+
+.s {
+	display: inline-block;
+    width: 20vw;
+    height: 100vw;
+    font-size: 2px;
+    background-color: pink;
+}
+
+.sgap {
+    top: 0;
+    height: 10vw; 
+    overflow: hidden;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .y { font-size:10px; }
+}
+
+@media screen and (max-width: 600px) {
+  .y { font-size:25px; }
+  .word { flex-wrap:wrap;  }
+}
+
+@media screen and (max-width: 480px) {
+  .y { font-size:50px; }
+}
+
+@media screen and (max-width: 320px) {
+  .y { font-size:2px; }
+  /*td {height:150px; width:150px;}
+}*/

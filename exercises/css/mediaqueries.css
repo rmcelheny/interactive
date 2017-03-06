@@ -1,0 +1,20 @@
+body {
+	background: url("http://www.simplysated.com/wp-content/uploads/2015/09/1-roast-chicken-19c-P9150019.jpg");
+	background-size:cover;
+}
+
+@media screen and (max-width: 768px) {
+  body { background: url("https://c1.staticflickr.com/5/4029/4407578986_890f317d89_b.jpg") }
+}
+
+@media screen and (max-width: 600px) {
+  body { background: url("http://i.imgur.com/ZJz8sep.jpg") }
+}
+
+@media screen and (max-width: 480px) {
+  body { background: url("http://newsdesk.si.edu/sites/default/files/photos/tragopan%20chick_MM.jpg") }
+}
+
+@media screen and (max-width: 320px) {
+  body { background: url("http://cdn-image.realsimple.com/sites/default/files/styles/rs_horizontal_image_4/public/silo-brown-egg.jpg?itok=jtqm4Sas") }
+}

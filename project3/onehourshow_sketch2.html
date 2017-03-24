@@ -5,6 +5,33 @@
 	<link rel="stylesheet" href="css/clockface_nospin.css">
 	<link rel="stylesheet" href="css/onehourshow_sketch2.css">
 	
+	<script>
+		var looper;
+		var degrees = 0;
+		function rotateAnimation (el,speed) {
+			var elem = document.getElementById(el);
+			if(navigator.userAgent.match("Chrome")){
+				elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+				} 
+			else if(navigator.userAgent.match("Firefox")){
+				elem.style.MozTransform = "rotate("+degrees+"deg)";
+				} 
+			else if(navigator.userAgent.match("MSIE")){
+				elem.style.msTransform = "rotate("+degrees+"deg)";
+				} 
+			else if(navigator.userAgent.match("Opera")){
+				elem.style.OTransform = "rotate("+degrees+"deg)";
+				} 
+			else {
+				elem.style.transform = "rotate("+degrees+"deg)";
+				}
+			looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+			degrees++;
+			if(degrees > 359){
+				degrees = 1;
+				}
+			}
+	</script>
 </head>
 
 <body>
@@ -19,18 +46,47 @@
 		<script> 
 		document.getElementById("slowest").onmouseover = function () {
 			document.getElementById('secreto').playbackRate = 0.5;
-			}
-		document.getElementById("slowest").onmouseover = function () {
-			document.getElementById('go').addClass('spintest');
+			rotateAnimation ("spin1", 500);
+			rotateAnimation ("spin2", 500);
+			rotateAnimation ("spin3", 500);
+			rotateAnimation ("spin4", 500);
+			rotateAnimation ("spin5", 500);
+			rotateAnimation ("spin6", 500);
+			rotateAnimation ("spin7", 500);
+			rotateAnimation ("spin8", 500);
+			rotateAnimation ("spin9", 500);
+			rotateAnimation ("spin10", 500);
+			rotateAnimation ("spin11", 500);
+			rotateAnimation ("spin12", 500);
+			rotateAnimation ("spin13", 500);
+			rotateAnimation ("spin14", 500);
+			rotateAnimation ("spin15", 500);
+			rotateAnimation ("spin16", 500);
+			rotateAnimation ("spin17", 500);
 			}
 		</script>
-
-
 
 	<div class="control" id="slower"> </div>
 		<script> 
 		document.getElementById("slower").onmouseover = function () {
 			document.getElementById('secreto').playbackRate = 0.75;
+			rotateAnimation ("spin1", 400);
+			rotateAnimation ("spin2", 400);
+			rotateAnimation ("spin3", 400);
+			rotateAnimation ("spin4", 400);
+			rotateAnimation ("spin5", 400);
+			rotateAnimation ("spin6", 400);
+			rotateAnimation ("spin7", 400);
+			rotateAnimation ("spin8", 400);
+			rotateAnimation ("spin9", 400);
+			rotateAnimation ("spin10", 400);
+			rotateAnimation ("spin11", 400);
+			rotateAnimation ("spin12", 400);
+			rotateAnimation ("spin13", 400);
+			rotateAnimation ("spin14", 400);
+			rotateAnimation ("spin15", 400);
+			rotateAnimation ("spin16", 400);
+			rotateAnimation ("spin17", 400);
 			}
 		</script>
 
@@ -38,24 +94,94 @@
 		<script> 
 		document.getElementById("slow").onmouseover = function () {
 			document.getElementById('secreto').playbackRate = 0.9;
+			rotateAnimation ("spin1", 100);
+			rotateAnimation ("spin2", 100);
+			rotateAnimation ("spin3", 100);
+			rotateAnimation ("spin4", 100);
+			rotateAnimation ("spin5", 100);
+			rotateAnimation ("spin6", 100);
+			rotateAnimation ("spin7", 100);
+			rotateAnimation ("spin8", 100);
+			rotateAnimation ("spin9", 100);
+			rotateAnimation ("spin10", 100);
+			rotateAnimation ("spin11", 100);
+			rotateAnimation ("spin12", 100);
+			rotateAnimation ("spin13", 100);
+			rotateAnimation ("spin14", 100);
+			rotateAnimation ("spin15", 100);
+			rotateAnimation ("spin16", 100);
+			rotateAnimation ("spin17", 100);
 			}
 		</script>
+
 	<div class="control" id="normal"> </div>
 		<script> 
-		document.getElementById("normal").onmouseover = function () {
+		document.getElementById("normal").onload = function () {
 			document.getElementById('secreto').playbackRate = 1;
+			rotateAnimation ("spin1", 400);
+			rotateAnimation ("spin2", 400);
+			rotateAnimation ("spin3", 400);
+			rotateAnimation ("spin4", 400);
+			rotateAnimation ("spin5", 400);
+			rotateAnimation ("spin6", 400);
+			rotateAnimation ("spin7", 400);
+			rotateAnimation ("spin8", 400);
+			rotateAnimation ("spin9", 400);
+			rotateAnimation ("spin10", 400);
+			rotateAnimation ("spin11", 400);
+			rotateAnimation ("spin12", 400);
+			rotateAnimation ("spin13", 400);
+			rotateAnimation ("spin14", 400);
+			rotateAnimation ("spin15", 400);
+			rotateAnimation ("spin16", 400);
+			rotateAnimation ("spin17", 400);
 			}
 		</script>
+
 	<div class="control" id="fast"> </div>
 		<script> 
 		document.getElementById("fast").onmouseover = function () {
 			document.getElementById('secreto').playbackRate = 1.25;
+			rotateAnimation ("spin1", 10);
+			rotateAnimation ("spin2", 10);
+			rotateAnimation ("spin3", 10);
+			rotateAnimation ("spin4", 10);
+			rotateAnimation ("spin5", 10);
+			rotateAnimation ("spin6", 10);
+			rotateAnimation ("spin7", 10);
+			rotateAnimation ("spin8", 10);
+			rotateAnimation ("spin9", 10);
+			rotateAnimation ("spin10", 10);
+			rotateAnimation ("spin11", 10);
+			rotateAnimation ("spin12", 10);
+			rotateAnimation ("spin13", 10);
+			rotateAnimation ("spin14", 10);
+			rotateAnimation ("spin15", 10);
+			rotateAnimation ("spin16", 10);
+			rotateAnimation ("spin17", 10);
 			}
 		</script>
 	<div class="control" id="faster"> </div>
 			<script> 
 		document.getElementById("faster").onmouseover = function () {
 			document.getElementById('secreto').playbackRate = 2;
+			rotateAnimation ("spin1", 1);
+			rotateAnimation ("spin2", 1);
+			rotateAnimation ("spin3", 1);
+			rotateAnimation ("spin4", 1);
+			rotateAnimation ("spin5", 1);
+			rotateAnimation ("spin6", 1);
+			rotateAnimation ("spin7", 1);
+			rotateAnimation ("spin8", 1);
+			rotateAnimation ("spin9", 1);
+			rotateAnimation ("spin10", 1);
+			rotateAnimation ("spin11", 1);
+			rotateAnimation ("spin12", 1);
+			rotateAnimation ("spin13", 1);
+			rotateAnimation ("spin14", 1);
+			rotateAnimation ("spin15", 1);
+			rotateAnimation ("spin16", 1);
+			rotateAnimation ("spin17", 1);
 			}
 		</script>
 </div>
@@ -66,16 +192,16 @@
 	<div class="mi">
 		<div class="letter m">
 			<div class="letter-inside">
-				<div class="left spin">   </div>
+				<div class="left spin" id="spin1">   </div>
 				<div class="right-diag">  </div>
 				<div class="left-diag">   </div>
-				<div class="right spin" id="go">  </div>
+				<div class="right spin" id="spin2">  </div>
 			</div>
 		</div>
 
 		<div class="letter i">
 			<div class="letter-inside">
-				<div class="middle spin" id="go">   </div>
+				<div class="middle spin" id="spin3">   </div>
 			</div>
 		</div>
 	</div>
@@ -92,7 +218,7 @@
 
 			<div class="letter e">
 				<div class="letter-inside">
-					<div class="left spin" id="go">   </div>
+					<div class="left spin" id="spin4">   </div>
 					<div class="top">  </div>
 					<div class="bottom">  </div>
 					<div class="middle-e"> </div>
@@ -101,7 +227,7 @@
 
 			<div class="letter c" id="go">
 				<div class="letter-inside">
-					<div class="left spin" id="go">   </div>
+					<div class="left spin" id="spin5">   </div>
 					<div class="top">  </div>
 					<div class="bottom">  </div>
 				</div>
@@ -109,7 +235,7 @@
 
 		<div class="letter r">
 			<div class="letter-inside">
-				<div class="left spin" id="go">   </div>
+				<div class="left spin" id="spin6">   </div>
 				<div class="top">  </div>
 				<div class="middle-e"> </div>
 				<div class="rightp"> </div>
@@ -119,7 +245,7 @@
 
 			<div class="letter e">
 			<div class="letter-inside">
-				<div class="left spin" id="go">   </div>
+				<div class="left spin" id="spin7">   </div>
 				<div class="top">  </div>
 				<div class="bottom">  </div>
 				<div class="middle-e"> </div>
@@ -129,7 +255,7 @@
 		<div class="letter t">
 				<div class="letter-inside">
 					<div class="top">  </div>
-					<div class="middle spin" id="go">   </div>
+					<div class="middle spin" id="spin8">   </div>
 				</div>
 			</div>
 
@@ -145,7 +271,7 @@
 
 			<div class="letter l">
 		<div class="letter-inside">
-			<div class="left spin">   </div>
+			<div class="left spin" id="spin9">   </div>
 			<div class="bottom">  </div>
 		</div>
 	</div>
@@ -171,13 +297,13 @@
 		<div class="letter t">
 				<div class="letter-inside">
 					<div class="top">  </div>
-					<div class="middle spin">   </div>
+					<div class="middle spin" id="spin10">   </div>
 				</div>
 			</div>
 
 			<div class="letter e">
 				<div class="letter-inside">
-					<div class="left spin">   </div>
+					<div class="left spin" id="spin11">   </div>
 					<div class="top">  </div>
 					<div class="bottom">  </div>
 					<div class="middle-e"> </div>
@@ -186,16 +312,16 @@
 
 			<div class="letter m">
 				<div class="letter-inside">
-					<div class="left spin">   </div>
+					<div class="left spin" id="spin12">   </div>
 					<div class="right-diag">  </div>
 					<div class="left-diag">   </div>
-					<div class="right spin">  </div>
+					<div class="right spin" id="spin13">  </div>
 				</div>
 			</div>
 
 			<div class="letter e">
 				<div class="letter-inside">
-					<div class="left spin">   </div>
+					<div class="left spin" id="spin14">   </div>
 					<div class="top">  </div>
 					<div class="bottom">  </div>
 					<div class="middle-e"> </div>
@@ -204,7 +330,7 @@
 
 		<div class="letter r">
 			<div class="letter-inside">
-				<div class="left spin">   </div>
+				<div class="left spin" id="spin15">   </div>
 				<div class="top">  </div>
 				<div class="middle-e"> </div>
 				<div class="rightp"> </div>
@@ -220,7 +346,7 @@
 	</div>
 			<div class="letter r">
 			<div class="letter-inside">
-				<div class="left spin">   </div>
+				<div class="left spin" id="spin16">   </div>
 				<div class="top">  </div>
 				<div class="middle-e"> </div>
 				<div class="rightp"> </div>
@@ -230,7 +356,7 @@
 
 	<div class="letter i">
 		<div class="letter-inside">
-			<div class="middle spin">   </div>
+			<div class="middle spin" id="spin17">   </div>
 		</div>
 	</div>
 

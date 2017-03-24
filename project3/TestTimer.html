@@ -35,11 +35,19 @@
 <div id="button" style="height:100px; width:100px; background-color:yellow; margin:100px;"> </div>
 <div id="button2" style="height:100px; width:100px; background-color:red; margin:100px;"> </div>
 <div 
-	onmouseover="rotateAnimation('button',1)" 
-	onmouseover="rotateAnimation('button2',1)" 
 	id="test" 
 	style="height:100px; width:100px; background-color:pink; margin:100px;"> 
 	</div>
+		<script> 
+		document.getElementById("test").onmouseover = function () {
+			rotateAnimation ("button", 1);
+			rotateAnimation ('button2', 200);
+			}
+		document.getElementById("test").onmouseout = function () {
+			rotateAnimation ('button', 20);
+			rotateAnimation ('button', 20);
+		}
+		</script>
 <!-- <script>rotateAnimation("button",30);</script> -->
 <!-- <h1 id="message">Loading</h1>
 

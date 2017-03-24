@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Interview with Travis Fitzgerald</title>
 		<link rel="stylesheet" href="css/index.css">
-		<link rel="stylesheet" href="css/02.css">
+<!-- 		<link rel="stylesheet" href="css/02.css"> -->
 	</head>
 
 	<body>
@@ -56,6 +56,18 @@
 	<div class="next">
 		<a href="03.html">&#10133</a>
 	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+	  	$('a').click(function(){
+	      $('html, body').animate({
+	          scrollTop: $( $(this).attr('href') ).offset().top
+	      }, 500);
+	      return false;
+	  });
+	});
+	</script>
 
 	</body>
 </html>

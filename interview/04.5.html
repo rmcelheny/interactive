@@ -10,8 +10,9 @@
 
 	<div class="content">
 		<p>
-		They launched an online TV network, like Hulu for artists' videos or webseries, called American Medium Network<a href="http://www.americanmedium.tv/" target=blank>...</a>
-		</p>
+		They launched an online TV network, like Hulu for artists' videos or webseries, called American Medium Network.</p>
+		<iframe src="http://www.americanmedium.tv/" width="800" height="800">
+		</iframe>
 		
 
 	</div>
@@ -19,5 +20,17 @@
 	<div class="next">
 		<a href="05.html">&#10133</a>
 	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+	  	$('a').click(function(){
+	      $('html, body').animate({
+	          scrollTop: $( $(this).attr('href') ).offset().top
+	      }, 500);
+	      return false;
+	  });
+	});
+	</script>
 	</body>
 </html>

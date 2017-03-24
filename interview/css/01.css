@@ -1,4 +1,4 @@
-body {
+/*body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size:25px;
 }
@@ -11,28 +11,28 @@ body {
     	margin-left:2em;
    }
 
-
-#front {
+*/
+/*#front {
 	padding-top:2em;
 	padding-bottom:4em;
 }
 
 #mission{
 	height:800px;
-}
+}*/
 
-.gallery {
+/*.gallery {
 	width:10000px;
 	padding-top:2em;
 	padding-bottom:4em;
-}
-
+}*/
+/*
 img {
 	height:600px;
 }
+*/
 
-
-#artists {
+/*#artists {
 	height:1000px;
 }
 
@@ -59,4 +59,4 @@ img {
 	position:fixed;
 	bottom:200px;
 	right:1em;
-}
+}*/

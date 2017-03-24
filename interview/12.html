@@ -15,10 +15,10 @@
 		<div class="travis" id="answer">
 		<p>It's hard to say. I would say that my goal is to continue to expand our programming. To get more artists on the roster. We'd like to be more invigorated with one-night programing as well. Finishing the physical build-out of the backyard and basement, and making the building really special, that's a major goal. But those are all do-able, forseeable goals.</p>
 		<p>A big goal is to have the gallery function as our main jobs, we all work elsewhere right now. We'd like to be doing well enough to bring in a fuller staff. A curatorial assistant and a registrar. Somebody to help with research. </p>
-		<p><span style="background-color:yellow">But the physical space is important to all of us. Providing a sanctuary. We want the backyard to be some sort of breather kind of space, a space to reflect</span><a href="#answer">...</a></p>
+		<p><span style="background-color:yellow">But the physical space is important to all of us. Providing a sanctuary. We want the backyard to be some sort of breather kind of space, a space to reflect</span><a href="#answer2">...</a></p>
 		</div>
 
-		<div class="content" id="answer">
+		<div class="content" id="answer2">
 		<p><a href="http://www.americanmedium.net/">American Medium</a></p>
 		<p><a href="http://appendixspace.com/">Appendix Space</a></p>
 		<p><a href="http://eexxttrraa.com/">Extra Extra</a></p>
@@ -27,6 +27,16 @@
 		<div class="next">
 		<a href="index.html">&#10133</a>
 		</div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+	  	$('a').click(function(){
+	      $('html, body').animate({
+	          scrollTop: $( $(this).attr('href') ).offset().top
+	      }, 500);
+	      return false;
+	  });
+	});
+	</script>
 	</body>
 </html>

@@ -1,6 +1,8 @@
 body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size:25px;
+	position:relative;
+	overflow-y:scroll;
 }
 
 a:link {
@@ -22,6 +24,10 @@ ul {
 	list-style-type: circle;
 }
 
+img {
+	height:600px;
+}
+
 .content {
     	width:800px;
     	height: 800px;
@@ -34,6 +40,7 @@ ul {
 	color:blue;
 	width:800px;
 	height:1000px;
+	position:absolute;
 	margin-top:2em;
 	margin-left:2em;
 }
@@ -44,21 +51,54 @@ ul {
     margin-left:2em;
 }
 
-.back {
-	font-size:25px;
-	position:fixed;
-	bottom:200px;
-	left:1em;
-}
-
 .next {
 	font-size:25px;
-	position:fixed;
-	bottom:200px;
-	right:1em;
+	position:absolute;
+	bottom:2em;
+	right:2em;
+	height:50px;
+	background-color:red;
+}
+
+.gallery {
+	width:10000px;
+	padding-top:2em;
+	padding-bottom:4em;
+}
+
+.audio {
+	width:800px;
+    height: 800px;
+    margin-left:2em;
+}
+
+#artists {
+	height:1000px;
 }
 
 #travis {
 	font-style:italic;
 	color:blue;
+}
+
+#front {
+	padding-top:2em;
+	padding-bottom:4em;
+}
+
+#mission{
+	height:800px;
+}
+
+#hirschintro {
+	height:1000px;
+}
+
+#hirsch {
+	width:10000px;
+	height:800px;
+}
+
+#commercial {
+	height:1000px;
 }

@@ -1,0 +1,1007 @@
+body { overflow-x: hidden; }
+
+.letter {
+	display: inline-block;
+	vertical-align: top;
+	width:100px;
+	height: 210px;
+	position: relative;
+	margin-right: 1%;
+	margin-bottom: 1%;
+}
+
+.letter-inside {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.space {
+	width:50px;
+}
+
+.a .left-diag {
+	width:4px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    transform: rotate(13deg);
+    transform-origin:bottom;
+}
+
+.a .right-diag {
+	width:4px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0;
+    transform: rotate(-13deg);
+    transform-origin:bottom;
+}
+
+.a .middle-a {
+	height:4px;
+	width:45%;
+	top:35%;
+	background-color:green;
+	position:absolute;
+}
+
+.b .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.b .diag-up {
+	height:4px;
+	position:absolute;
+	top:2%;
+	left:0;
+	width:100%;
+	background-color:green;
+	transform: rotate(22deg);
+	transform-origin:0 0;
+}
+
+.b .diag-down {
+	height:4px;
+	width:97%;
+	left:0;
+	position:absolute;
+	top:27%;
+	background-color:green;
+	transform: rotate(-22deg);
+}
+
+#bbottom {
+	top:35%;
+}
+
+#bbbottom {
+	top:88%;
+}
+
+.b-mid-right {
+    width: 4px;
+    position: absolute;
+    top: 53%;
+    bottom: 19%;
+    right: 4px;
+    background-color: green;
+}
+
+.c .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.c .top {
+	height:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	right:0;
+}
+
+.c .bottom {
+	height:4px;
+	background:green;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.d .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.d .diag-up {
+	height:4px;
+	width:92%;
+	position:absolute;
+	top:2%;
+	left:0;
+	background-color:green;
+	transform: rotate(22deg);
+	transform-origin:0 0;
+}
+
+.d .dbottom {
+	height:4px;
+	width:89%;
+	position:absolute;
+	top:88%;
+	left:0;
+	background-color:green;
+	transform: rotate(-22deg);
+}
+
+.d .mid-right {
+    width:4px;
+    position: absolute;
+    top: 19%;
+    bottom: 16%;
+    right: 15%;
+    background-color: green;
+}
+
+.e .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.e .top {
+	height:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	right:0;
+}
+
+.e .bottom {
+	height:4px;
+	background:green;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.e .middle-e {
+	height:4px;
+	background:green;
+	position:absolute;
+	bottom:61%;
+	left:0;
+	right:0;
+}
+
+.f .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.f .top {
+	height:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	right:0;
+}
+
+.f .middle-e {
+	height:4px;
+	background:green;
+	position:absolute;
+	bottom:61%;
+	left:0;
+	right:0;
+}
+
+.g .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.g .bottom {
+	height:4px;
+	background:green;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.g .right-g {
+	width:4px;
+	background:green;
+	position:absolute;
+	bottom:0;
+	top:35%;
+	right:0;
+}
+
+.g .hook-g {
+	height:4px;
+	background:green;
+	position:absolute;
+	top:35%;
+	left:75%;
+	right:0;
+}
+
+.g .top {
+	height:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	right:0;
+}
+
+.h .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.h .right {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	bottom:0;
+	right:0;
+}
+
+.h .middle-e {
+	height:4px;
+	background:green;
+	position:absolute;
+	bottom:61%;
+	left:0;
+	right:0;
+}
+
+.i {
+	margin-left:-20px;
+	margin-right:-20px;
+}
+
+.i .middle {
+	width:4px;
+	background-color:green;
+	position:absolute;
+	top:0;
+	bottom:0;
+}
+
+.j .right {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	bottom:0;
+	right:0;
+}
+
+.j .jbottom {
+	height:4px;
+	width:89%;
+	position:absolute;
+	top:88%;
+	right:0;
+	background-color:green;
+	transform: rotate(202deg);
+}
+
+.k {
+	margin-left:20px;
+}
+
+.k .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.k .diag-down {
+	height:4px;
+	width:89%;
+	position:absolute;
+	top:27%;
+	left:0;
+	background-color:green;
+	transform: rotate(-22deg);
+}
+
+.k .diag-down-long {
+   	width:4px;
+   	height:100%;
+    background-color: green;
+    position: absolute;
+    top: 35%;
+    bottom:0;
+    left:0;
+    transform: rotate(-13deg);
+    transform-origin:top;
+}
+
+.l .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.l .bottom {
+	height:4px;
+	background:green;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+
+.m .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+}
+
+.m .right {
+	width:4px;
+	background-color:green;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+}
+
+.m .left-diag {
+	width:4px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:48%;
+    transform: rotate(13deg);
+    transform-origin:bottom;
+}
+
+.m .right-diag {
+	width:4px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:48%;
+    transform: rotate(-13deg);
+    transform-origin:bottom;
+}
+
+.n {
+	width:51px;
+}
+
+.n .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+}
+
+.n .right {
+	width:4px;
+	background-color:green;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+}
+
+.n .right-diag {
+	width:4px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0;
+    transform: rotate(-13deg);
+    transform-origin:bottom;
+}
+
+.o .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+}
+
+.o {
+	display:none;
+}
+
+.o .right {
+	width:4px;
+	background-color:green;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+}
+
+
+.o .bottom {
+	height:4px;
+	background:green;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.o .top {
+	height:4px;
+	background:green;
+	position:absolute;
+	top:0%;
+	left:0;
+	right:0;
+}
+
+.alt-o {
+	height:210px;
+	width:210px;
+}
+
+.alt-o .circle {
+	height:100%;
+	width:100%;
+	border:4px green solid;
+	border-radius:50%;
+}
+
+.p .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.p .top {
+	height:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	right:0;
+}
+
+.p .middle-e {
+	height:4px;
+	background:green;
+	position:absolute;
+	bottom:61%;
+	left:0;
+	right:0;
+}
+
+.p .rightp {
+	width: 4px;
+    background: green;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    bottom: 63%;
+}
+
+.q {
+	overflow:visible;
+}
+
+.q .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+}
+
+.q .right {
+	width:4px;
+	background-color:green;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+}
+
+
+.q .bottom {
+	height:4px;
+	background:green;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.q .top {
+	height:4px;
+	background:green;
+	position:absolute;
+	top:0%;
+	left:0;
+	right:0;
+}
+
+.q .qdiag {
+   	width:4px;
+   	height:100%;
+    background-color: green;
+    position: absolute;
+    top: 35%;
+    bottom:0;
+    right:50%;
+    transform: rotate(-13deg);
+    transform-origin:0% 0%;
+}
+
+
+.r .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.r .top {
+	height:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	right:0;
+}
+
+.r .middle-e {
+	height:4px;
+	background:green;
+	position:absolute;
+	bottom:61%;
+	left:0;
+	right:0;
+}
+
+.r .rightp {
+	width: 4px;
+    background: green;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    bottom: 63%;
+}
+
+.r .diag-down-long {
+   	width:4px;
+   	height:100%;
+    background-color: green;
+    position: absolute;
+    top: 35%;
+    bottom:0;
+    left:0;
+    transform: rotate(-13deg);
+    transform-origin:top;
+}
+
+.s {
+    width: 186px;
+    margin-left: -50px;
+}
+
+.s .right-diag {
+    width: 4px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: rotate(-13deg);
+    transform-origin: top;
+}
+
+.s .jbottom {
+    height: 4px;
+    width: 50%;
+    position: absolute;
+    top: 88%;
+    left: 27%;
+    background-color: green;
+    transform: rotate(202deg);
+}
+
+.s .diag-up {
+    height: 4px;
+    width: 50%;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    background-color: green;
+    transform: rotate(22deg);
+    transform-origin: 0 0;
+}
+
+.t {
+	width:90px;
+}
+
+.t .middle {
+	width:4px;
+	background-color:green;
+	position:absolute;
+	top:0;
+	bottom:0;
+}
+
+.t .top {
+	height:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	right:0;
+}
+
+.u .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	left:0;
+	bottom:0;
+}
+
+.u .right {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:2%;
+	bottom:19%;
+	right:0;
+}
+
+.u #ubottom {
+	height:4px;
+	position:absolute;
+	left:0;
+	right:0;
+	background-color:green;
+	transform: rotate(-22deg);
+	top:88%;
+}
+
+.v .right-diag {
+    width:4px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    transform: rotate(-13deg);
+    transform-origin:top;
+}
+
+.v .left-diag {
+    width:4px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0;
+    transform: rotate(13deg);
+    transform-origin:top;
+}
+
+.w .left {
+	width:4px;
+	background:green;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+}
+
+.w .right {
+	width:4px;
+	background-color:green;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+}
+
+.w .right-diag {
+    width:4px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0;
+    transform: rotate(-13deg);
+    transform-origin:bottom;
+}
+
+.w .left-diag {
+    width:4px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    transform: rotate(13deg);
+    transform-origin:bottom;
+}
+
+.x {
+	width:41px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+
+.x .right-diag {
+    width:4px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    transform: rotate(-13deg);
+    transform-origin:top;
+}
+
+.x .left-diag {
+    width:4px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0;
+    transform: rotate(13deg);
+    transform-origin:top;
+}
+
+.y .left-diag {
+    width:4px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0;
+    transform: rotate(13deg);
+    transform-origin:top;
+}
+
+.y .jbottom {
+	height:4px;
+	width:89%;
+	position:absolute;
+	top:35%;
+	right:15%;
+	background-color:green;
+	transform: rotate(202deg);
+}
+
+.z {
+	width:78px;
+}
+
+.z .left-diag {
+	 width:4px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:18%;
+    transform: rotate(13deg);
+    transform-origin:top;
+}
+
+.z .bottom {
+	height:4px;
+	background:green;
+	position:absolute;
+	bottom:0;
+	left:18%;
+	right:0;
+}
+
+.z .top {
+	height:4px;
+	background:green;
+	position:absolute;
+	top:0%;
+	left:0;
+	right:18%;
+}
+
+audio {
+	display:none;
+}
+
+/*#slowest {
+	background-color:pink;
+}*/
+
+/*#slowest:hover + #slower {
+	background-color:red;
+}*/
+
+.container {
+	width:100vw;
+	top:0;
+	left:0;
+	z-index:44444;
+}
+
+.mi {
+	margin-top:10%;
+	margin-left:10%;
+	display:block;
+}
+
+.secreto {
+	margin-left:10%;
+	display:block;
+}
+
+.los {
+	margin-left:9%;
+	display:block;
+}
+
+.temerarios {
+	margin-left:9%;
+	display:block;
+}
+
+.containercontrol {
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:1;
+/*	background-color:red;*/
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+}
+
+.control {
+	width:17%;
+/*	border:2px solid yellow;*/
+	top:0;
+	bottom:0;
+}
+
+.spintest {
+	background-color:red;
+}
+
+.slowest {
+	-webkit-animation: spin 60s infinite linear;
+	-moz-animation: spin 60s infinite linear;
+	-o-animation: spin 60s infinite linear;
+	-ms-animation: spin 60s infinite linear;
+}
+
+.slower {
+	-webkit-animation: spin 30s infinite linear;
+	-moz-animation: spin 30s infinite linear;
+	-o-animation: spin 30s infinite linear;
+	-ms-animation: spin 30s infinite linear;
+}
+
+.slow {
+	-webkit-animation: spin 15s infinite linear;
+	-moz-animation: spin 15s infinite linear;
+	-o-animation: spin 15s infinite linear;
+	-ms-animation: spin 15s infinite linear;
+}
+
+.normal {
+	-webkit-animation: spin 1s infinite linear;
+	-moz-animation: spin 1s infinite linear;
+	-o-animation: spin 1s infinite linear;
+	-ms-animation: spin 1s infinite linear;
+}
+
+.fast {
+	-webkit-animation: spin 0.5s infinite linear;
+	-moz-animation: spin 0.5s infinite linear;
+	-o-animation: spin 0.5s infinite linear;
+	-ms-animation: spin 0.5s infinite linear;
+}
+
+.faster {
+	-webkit-animation: spin 0.1s infinite linear;
+	-moz-animation: spin 0.1s infinite linear;
+	-o-animation: spin 0.1s infinite linear;
+	-ms-animation: spin 0.1s infinite linear;
+}
+
+.pause {
+	-webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+    animation-play-state: paused;
+}
+
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); -webkit-transform-origin:bottom left;}
+	100% { -webkit-transform: rotate(360deg); -webkit-transform-origin:bottom left;}
+}
+
+/*
+#slowest:hover + .spin {
+	-webkit-animation: spin 10s infinite linear;
+	-moz-animation: spin 10s infinite linear;
+	-o-animation: spin 10s infinite linear;
+	-ms-animation: spin 10s infinite linear;
+}
+*/

@@ -41,7 +41,7 @@
   Your browser does not support the audio tag.
 </audio>
 
-<div class="containercontrol">
+<div class="containercontrol" onclick="aud_play_pause();" >
 	<div class="control" id="slowest"> </div>
 		<script> 
 		document.getElementById("slowest").onmouseover = function () {
@@ -186,8 +186,20 @@
 		</script>
 </div>
 
+	<script> 
+		function aud_play_pause() {
+  		var myAudio = document.getElementById("secreto");
+  		if (myAudio.paused) {
+    			myAudio.play();
+  			} else {
+    			myAudio.pause();
+  			}
+		}
 
-<div class="container">
+	</script>
+
+
+<div class="containerletters" id="secretotext">
 
 	<div class="mi">
 		<div class="letter m">
@@ -377,6 +389,9 @@
 	</div>
 </div>
 
+<div class="containerletters" id="chupoptext">
+
+</div>
 
 
 </body>

@@ -895,9 +895,14 @@ audio {
 
 .container {
 	width:100vw;
+	height:1200px;
 	top:0;
 	left:0;
 	z-index:44444;
+}
+
+#track2 {
+	background-color:yellow;
 }
 
 .mi {
@@ -928,7 +933,6 @@ audio {
 	left:0;
 	right:0;
 	z-index:1;
-/*	background-color:red;*/
 	display:flex;
 	flex-direction:row;
 	justify-content:space-around;
@@ -936,7 +940,6 @@ audio {
 
 .control {
 	width:17%;
-/*	border:2px solid yellow;*/
 	top:0;
 	bottom:0;
 }
@@ -997,11 +1000,6 @@ audio {
 	100% { -webkit-transform: rotate(360deg); -webkit-transform-origin:bottom left;}
 }
 
-/*
-#slowest:hover + .spin {
-	-webkit-animation: spin 10s infinite linear;
-	-moz-animation: spin 10s infinite linear;
-	-o-animation: spin 10s infinite linear;
-	-ms-animation: spin 10s infinite linear;
+.test {
+	background-color:red;
 }
-*/

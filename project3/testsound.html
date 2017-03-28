@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>test sound</title>
+	<meta charset="utf-8" />
+
+	<style> 
+		audio {
+			display:none;
+		}
+
+		.container {
+			width:100vw;
+			height:1200px;
+			display:block;
+		}
+
+		#track1 {
+			background:red;
+		}
+
+		#track2 {
+			background:pink;
+		}
+
+		.test {
+			background-color:green;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<audio id="secreto">
+		<source src="assets/snip1.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="angel">
+		<source src="assets/snip2.mp3" type="audio/mpeg">
+	</audio>
+
+
+	<div class="container" id="track1" onmouseover="audplay();" onclick="aud_play_pause();"> </div>
+	<div class="container" id="track2" onclick="aud_play_pause2();"> </div>
+
+	<script>
+	
+	var myAudio = document.getElementById("secreto");
+	var myAudio2 = document.getElementById("angel");
+
+	function aud_play_pause() {	
+      		if (myAudio.paused) {
+         		 myAudio.play();
+       		} else {
+          		myAudio.pause();
+        	}
+    }
+
+    function aud_play_pause2() {
+      		if (myAudio2.paused) {
+         		 myAudio2.play();
+       		} else {
+          		myAudio2.pause();
+        	}
+    }
+
+    function audplay() {
+    	myAudio.play();
+    }
+
+    function audplay2 () {
+    	
+    }
+
+
+  //   $("#myAudio").onended = function() {
+  //   	$("#track1").addClass("test");
+		// }
+
+
+
+ 	// $(document).ready(function(){
+  // 	$(window).scroll(function() {
+		// if ($(document).scrollTop() < 1200) {
+		//  	myAudio.play();
+		//  	myAudio2.pause();
+		// } else {
+		//   	myAudio.pause();
+		//   	myAudio2.play();
+		// }
+		// });
+		// });
+
+	</script>
+</body>
+</html>

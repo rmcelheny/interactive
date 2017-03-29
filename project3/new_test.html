@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>One Hour Show</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/mixindex.css">
+	<style>
+		.track1 {
+			height:100vw;
+			width:100vw;
+			background-color:red;
+			position:relative;
+			display:flex;
+			flex-direction:row;
+			flex-wrap:none;
+			justify-content:flex-start;
+		}
+
+		.track2 {
+			height:100vw;
+			width:100vw;
+			background-color:pink;
+			position:relative;
+			display:flex;
+			flex-direction:row;
+			flex-wrap:none;
+			justify-content:flex-start;
+		}
+
+		.test {
+			background-color:green;
+		}
+
+		.test2 {
+			background-color:magenta;
+		}
+
+		.test3 {
+			background-color:orange;
+		}
+
+		.wider {
+			width:40%;
+		}
+
+		.control {
+			border:2px yellow solid;
+			width:20%;
+			height:100vw;
+			z-index:100;
+		}
+
+		.letters {
+			width:400px;
+			height:400px;
+			position:absolute;
+			top:400px;
+			left:400px;
+			background-color:gray;
+			z-index:1;
+		}
+
+
+	</style>
+</head>
+
+<body>
+
+	<audio id="secreto">
+		<source src="assets/secreto.mp3" type="audio/mpeg">
+			Your browser does not support the audio tag.
+	</audio>
+
+	<audio id="angel">
+		<source src="assets/angel.mp3" type="audio/mpeg">
+			Your browser does not support the audio tag.
+	</audio>
+
+	<div class="track1">
+		<div class="control" id="slowest1"></div>
+		<div class="control" id="slower1"></div>
+		<div class="control" id="normal1"></div>
+
+		<div class="letters"> </div>
+	</div>
+
+	<div class="track2">
+		<div class="control" id="slowest2"></div>
+		<div class="control" id="slower2"></div>
+		<div class="control" id="normal2"></div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/script_new.js"></script>
+
+</body>
+</html>

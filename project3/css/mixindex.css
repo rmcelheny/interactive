@@ -881,72 +881,68 @@ body { overflow-x: hidden; }
 	right:18%;
 }
 
-audio {
-	display:none;
-}
+/*PAGE STYLING*/
 
-/*#slowest {
-	background-color:pink;
-}*/
-
-/*#slowest:hover + #slower {
-	background-color:red;
-}*/
-
-.container {
-	width:100vw;
-	height:1200px;
-	top:0;
-	left:0;
-	z-index:44444;
-}
-
-#track2 {
-	background-color:yellow;
+.word {
+	margin-left:10%;
 }
 
 .mi {
 	margin-top:10%;
-	margin-left:10%;
-	display:block;
 }
 
-.secreto {
-	margin-left:10%;
-	display:block;
+.eres {
+	margin-top:10%;
 }
 
-.los {
-	margin-left:9%;
-	display:block;
+.track1 {
+	height:100vw;
+	width:100vw;
+	background-color:red;
+	position:relative;
 }
 
-.temerarios {
-	margin-left:9%;
-	display:block;
+.track2 {
+	background-color:yellow;
+	width:100vw;
+	height:100vw;
+	position:relative;
 }
 
-.containercontrol {
-	position:fixed;
+.controlcontainer {
+	height:100vw;
+	width:100vw;
+	position:absolute;
 	top:0;
-	bottom:0;
 	left:0;
-	right:0;
-	z-index:1;
 	display:flex;
 	flex-direction:row;
-	justify-content:space-around;
+	flex-wrap:none;
+	justify-content:flex-start;
 }
 
 .control {
-	width:17%;
-	top:0;
-	bottom:0;
+	border:2px yellow solid;
+	width:20%;
+	height:100vw;
+	z-index:100;
 }
 
-.spintest {
-	background-color:red;
+.text {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
 }
+
+
+/*AUDIO*/
+
+audio {
+	display:none;
+}
+
+/*ANIMATION*/
 
 .slowest {
 	-webkit-animation: spin 60s infinite linear;
@@ -998,8 +994,4 @@ audio {
 @-webkit-keyframes spin {
 	0% { -webkit-transform: rotate(0deg); -webkit-transform-origin:bottom left;}
 	100% { -webkit-transform: rotate(360deg); -webkit-transform-origin:bottom left;}
-}
-
-.test {
-	background-color:red;
 }

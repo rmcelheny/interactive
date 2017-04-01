@@ -5,22 +5,324 @@
 	<title>One Hour Show</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="css/mixindex.css">
+	<link rel="stylesheet" href="css/clockface.css">
 </head>
 
 <body>
 
-	<audio id="secreto" loop>
-		<source src="assets/secreto.mp3" type="audio/mpeg">
+<!-- LETTER DEFINITION -->
+
+<div class="letter-definition" data-character=" ">
+    <div class="space">
+    	<div class="letter wordspace"> </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="A">
+   <div class="letter a">
+		<div class="letter-inside">
+			<div class="left-diag spin2">   </div>
+			<div class="right-diag spin2">  </div>
+			<div class="middle-a">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="B">
+   <div class="letter b">
+		<div class="letter-inside">
+			<div class="left spin">   </div>
+			<div class="diag-up"> </div>
+			<div class="diag-down"> </div>
+			<div class="diag-up" id="bbottom"> </div>
+			<div class="diag-down" id="bbbottom"> </div>
+			<div class="b-mid-right"> </div>
+			<div class="middle-a">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="C">
+    <div class="letter c">
+		<div class="letter-inside">
+			<div class="left spin">   </div>
+			<div class="top">  </div>
+			<div class="bottom">  </div>
+		</div>
+	</div>
+</div>
+
+
+<div class="letter-definition" data-character="D">
+   <div class="letter d">
+		<div class="letter-inside">
+			<div class="left spin">   </div>
+			<div class="diag-up"> </div>
+			<div class="dbottom"> </div>
+			<div class="mid-right"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="E">
+   <div class="letter e">
+		<div class="letter-inside">
+			<div class="left spin">   </div>
+			<div class="top">  </div>
+			<div class="bottom">  </div>
+			<div class="middle-e"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="F">
+	<div class="letter f">
+		<div class="letter-inside">
+			<div class="left spin">   </div>
+			<div class="top">  </div>
+			<div class="middle-e"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="G">
+    <div class="letter g">
+		<div class="letter-inside">
+			<div class="left spin">   </div>
+			<div class="top">  </div>
+			<div class="bottom">  </div>
+			<div class="right-g"> </div>
+			<div class="hook-g"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="H">
+	<div class="letter h">
+		<div class="letter-inside">
+			<div class="left spin">   </div>
+			<div class="right spin">  </div>
+			<div class="middle-e">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="I">
+	<div class="letter i skinny">
+		<div class="letter-inside">
+			<div class="middle spin">   </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="J">
+   <div class="letter j">
+		<div class="letter-inside">
+			<div class="right spin">   </div>
+			<div class="jbottom"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="K">
+  	<div class="letter k">
+		<div class="letter-inside">
+			<div class="left spin">   </div>
+			<div class="diag-down">  </div>
+			<div class="diag-down-long">  </div>
+		</div>
+	</div>
+
+</div>
+
+<div class="letter-definition" data-character="L">
+ 	<div class="letter l">
+		<div class="letter-inside">
+			<div class="left spin">   </div>
+			<div class="bottom">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="M">
+   <div class="letter m">
+		<div class="letter-inside">
+			<div class="left spin">   </div>
+			<div class="right-diag">  </div>
+			<div class="left-diag">   </div>
+			<div class="right spin">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="N">
+    <div class="letter n">
+		<div class="letter-inside">
+			<div class="left spin">   </div>
+			<div class="right-diag spin2">  </div>
+			<div class="right spin">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="O">
+  	<div class="letter alt-o">
+		<div class="letter-inside">
+			<div class="circle"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="P">
+   <div class="letter p">
+		<div class="letter-inside">
+			<div class="left spin">   </div>
+			<div class="top">  </div>
+			<div class="middle-e"> </div>
+			<div class="rightp"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="Q">
+	<div class="letter q">
+		<div class="letter-inside">
+			<div class="left">   </div>
+			<div class="right">  </div>
+			<div class="top">  </div>
+			<div class="bottom">  </div>
+			<div class="qdiag" id="qtail"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="R">
+ 	<div class="letter r">
+		<div class="letter-inside">
+			<div class="left spin">   </div>
+			<div class="top">  </div>
+			<div class="middle-e"> </div>
+			<div class="rightp"> </div>
+			<div class="diag-down-long spin2">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="S">
+	<div class="letter s">
+		<div class="letter-inside">
+			<div class="right-diag">  </div>
+			<div class="diag-up"> </div>
+			<div class="jbottom"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="T">
+	<div class="letter t">
+		<div class="letter-inside">
+			<div class="top">  </div>
+			<div class="middle spin">   </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="U">
+	<div class="letter u">
+		<div class="letter-inside">
+			<div class="left spin">   </div>
+			<div class="diag-down" id="ubottom"> </div>
+			<div class="right">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="V">
+	<div class="letter v">
+		<div class="letter-inside">
+			<div class="right-diag">  </div>
+			<div class="left-diag">   </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="W">
+	<div class="letter w">
+		<div class="letter-inside">
+			<div class="left spin">   </div>
+			<div class="left-diag">   </div>
+			<div class="right-diag">  </div>
+			<div class="right spin">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="X">
+	<div class="letter x">
+		<div class="letter-inside">
+			<div class="right-diag">  </div>
+			<div class="left-diag">   </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="Y">
+	<div class="letter y">
+		<div class="letter-inside">
+			<div class="left-diag">   </div>
+			<div class="jbottom"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="Z">
+  	<div class="letter z">
+		<div class="letter-inside">
+			<div class="left-diag">  </div>
+			<div class="bottom"> </div>
+			<div class="top"> </div>
+		</div>
+	</div>
+</div>
+
+<!-- AUDIO -->
+
+	<audio id="trackone" loop>
+		<source src="assets/1nevermylove.mp3" type="audio/mpeg">
 			Your browser does not support the audio tag.
 	</audio>
 
-	<audio id="angel" loop>
-		<source src="assets/angel.mp3" type="audio/mpeg">
+	<audio id="tracktwo" loop>
+		<source src="assets/2waiting.mp3" type="audio/mpeg">
 			Your browser does not support the audio tag.
 	</audio>
 
+	<audio id="trackthree" loop>
+		<source src="assets/3anna.mp3" type="audio/mpeg">
+			Your browser does not support the audio tag.
+	</audio>
 
-	
+	<audio id="trackfour" loop>
+		<source src="assets/4steelnskin.mp3" type="audio/mpeg">
+			Your browser does not support the audio tag.
+	</audio>
+
+	<audio id="trackfive" loop>
+		<source src="assets/5dirty.mp3" type="audio/mpeg">
+			Your browser does not support the audio tag.
+	</audio>
+
+	<audio id="tracksix" loop>
+		<source src="assets/6daf.mp3" type="audio/mpeg">
+			Your browser does not support the audio tag.
+	</audio>
+
+	<audio id="trackseven" loop>
+		<source src="assets/7dope.mp3" type="audio/mpeg">
+			Your browser does not support the audio tag.
+	</audio>
+
+<!-- TRACK 1-->
 	<div class="track1">
 
 		<div class="controlcontainer">
@@ -32,174 +334,15 @@
 			<div class="control" id="faster1"></div>
 		</div>
 
-		<div class="text">
-			<div class="word mi">
-				<div class="letter m">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="right-diag">  </div>
-						<div class="left-diag">   </div>
-						<div class="right spin">  </div>
-					</div>
-				</div>
-				<div class="letter i">
-					<div class="letter-inside">
-						<div class="middle spin">   </div>
-					</div>
-				</div>
-			</div>
-			<div class="word secreto">
-				<div class="letter s">
-					<div class="letter-inside">
-						<div class="right-diag">  </div>
-						<div class="diag-up"> </div>
-						<div class="jbottom"> </div>
-					</div>
-				</div>
-				<div class="letter e">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="top">  </div>
-						<div class="bottom">  </div>
-						<div class="middle-e"> </div>
-					</div>
-				</div>
-				<div class="letter c" id="go">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="top">  </div>
-						<div class="bottom">  </div>
-					</div>
-				</div>
-				<div class="letter r">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="top">  </div>
-						<div class="middle-e"> </div>
-						<div class="rightp"> </div>
-						<div class="diag-down-long">  </div>
-					</div>
-				</div>
-				<div class="letter e">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="top">  </div>
-						<div class="bottom">  </div>
-						<div class="middle-e"> </div>
-					</div>
-				</div>
-				<div class="letter t">
-					<div class="letter-inside">
-						<div class="top">  </div>
-						<div class="middle spin">   </div>
-					</div>
-				</div>
-				<div class="letter alt-o">
-					<div class="letter-inside">
-						<div class="circle"> </div>
-					</div>
-				</div>
-		</div>
-
-		<div class="word los">
-			<div class="letter l">
-				<div class="letter-inside">
-					<div class="left spin">   </div>
-					<div class="bottom">  </div>
-				</div>
-			</div>
-			<div class="letter alt-o">
-				<div class="letter-inside">
-					<div class="circle"> </div>
-				</div>
-			</div>
-			<div class="letter s">
-				<div class="letter-inside">
-					<div class="right-diag">  </div>
-					<div class="diag-up"> </div>
-					<div class="jbottom"> </div>
-				</div>
+		<div class="textcontainer">
+			<div class="line">
+				<div class="letters">ENTRANCE</div>
 			</div>
 		</div>
-
-			<div class="word temerarios">
-				<div class="letter t">
-					<div class="letter-inside">
-						<div class="top">  </div>
-						<div class="middle spin">   </div>
-					</div>
-				</div>
-				<div class="letter e">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="top">  </div>
-						<div class="bottom">  </div>
-						<div class="middle-e"> </div>
-					</div>
-				</div>
-				<div class="letter m">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="right-diag">  </div>
-						<div class="left-diag">   </div>
-						<div class="right spin" id="spin13">  </div>
-					</div>
-				</div>
-				<div class="letter e">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="top">  </div>
-						<div class="bottom">  </div>
-						<div class="middle-e"> </div>
-					</div>
-				</div>
-				<div class="letter r">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="top">  </div>
-						<div class="middle-e"> </div>
-						<div class="rightp"> </div>
-						<div class="diag-down-long">  </div>
-					</div>
-				</div>
-				<div class="letter a">
-					<div class="letter-inside">
-						<div class="left-diag">   </div>
-						<div class="right-diag">  </div>
-						<div class="middle-a">  </div>
-					</div>
-				</div>
-				<div class="letter r">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="top">  </div>
-						<div class="middle-e"> </div>
-						<div class="rightp"> </div>
-						<div class="diag-down-long">  </div>
-					</div>
-				</div>
-				<div class="letter i">
-					<div class="letter-inside">
-						<div class="middle spin">   </div>
-					</div>
-				</div>
-				<div class="letter alt-o">
-					<div class="letter-inside">
-						<div class="circle"> </div>
-					</div>
-				</div>
-				<div class="letter s">
-					<div class="letter-inside">
-						<div class="right-diag">  </div>
-						<div class="diag-up"> </div>
-						<div class="jbottom"> </div>
-					</div>
-				</div>
-			</div>
-
+	
 	</div>
 
-	</div>
+<!-- TRACK 2 -->
 
 	<div class="track2">
 	
@@ -212,96 +355,126 @@
 			<div class="control" id="faster2"></div>
 		</div>
 
-		<div class="text">
-			<div class="word eres">
-				<div class="letter e">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="top">  </div>
-						<div class="bottom">  </div>
-						<div class="middle-e"> </div>
-					</div>
-				</div>
-				<div class="letter r">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="top">  </div>
-						<div class="middle-e"> </div>
-						<div class="rightp"> </div>
-						<div class="diag-down-long">  </div>
-					</div>
-				</div>
-				<div class="letter e">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="top">  </div>
-						<div class="bottom">  </div>
-						<div class="middle-e"> </div>
-					</div>
-				</div>
-				<div class="letter s">
-					<div class="letter-inside">
-						<div class="right-diag">  </div>
-						<div class="diag-up"> </div>
-						<div class="jbottom"> </div>
-					</div>
-				</div>
+
+		<div class="textcontainer">
+			<div class="line">
+				<div class="letters">IM STILL WAITING</div>
 			</div>
-			<div class="word un">
-				<div class="letter u">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="diag-down" id="ubottom"> </div>
-						<div class="right">  </div>
-					</div>
-				</div>
-				<div class="letter n">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="right-diag">  </div>
-						<div class="right spin">  </div>
-					</div>
-				</div>
+		</div>
+
+	</div>
+
+	<!-- TRACK 3 -->
+
+	<div class="track3">
+	
+		<div class="controlcontainer">
+			<div class="control" id="slowest3"></div>
+			<div class="control" id="slower3"></div>
+			<div class="control" id="slow3"></div>
+			<div class="control" id="normal3"></div>
+			<div class="control" id="fast3"></div>
+			<div class="control" id="faster3"></div>
+		</div>
+
+
+		<div class="textcontainer">
+			<div class="line">
+				<div class="letters">GO TO HIM</div>
 			</div>
-			
-			<div class="word angel">
-				<div class="letter a">
-					<div class="letter-inside">
-						<div class="left-diag">   </div>
-						<div class="right-diag">  </div>
-						<div class="middle-a">  </div>
-					</div>
-				</div>
-				<div class="letter n">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="right-diag">  </div>
-						<div class="right spin">  </div>
-					</div>
-				</div>
-				<div class="letter g">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="top">  </div>
-						<div class="bottom">  </div>
-						<div class="right-g"> </div>
-						<div class="hook-g"> </div>
-					</div>
-				</div>
-				<div class="letter e">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="top">  </div>
-						<div class="bottom">  </div>
-						<div class="middle-e"> </div>
-					</div>
-				</div>
-				<div class="letter l">
-					<div class="letter-inside">
-						<div class="left spin">   </div>
-						<div class="bottom">  </div>
-					</div>
-				</div>
+		</div>
+
+	</div>
+
+		<!-- TRACK 4 -->
+
+	<div class="track4">
+	
+		<div class="controlcontainer">
+			<div class="control" id="slowest4"></div>
+			<div class="control" id="slower4"></div>
+			<div class="control" id="slow4"></div>
+			<div class="control" id="normal4"></div>
+			<div class="control" id="fast4"></div>
+			<div class="control" id="faster4"></div>
+		</div>
+
+
+		<div class="textcontainer">
+			<div class="line">
+				<div class="letters">REGGAE IS BACK</div>
+			</div>
+			<div class="line">
+				<div class="letters">ONCE AGAIN</div>
+			</div>
+		</div>
+
+	</div>
+
+			<!-- TRACK 5 -->
+
+	<div class="track5">
+	
+		<div class="controlcontainer">
+			<div class="control" id="slowest5"></div>
+			<div class="control" id="slower5"></div>
+			<div class="control" id="slow5"></div>
+			<div class="control" id="normal5"></div>
+			<div class="control" id="fast5"></div>
+			<div class="control" id="faster5"></div>
+		</div>
+
+
+		<div class="textcontainer">
+			<div class="line">
+				<div class="letters">DIRTY BACK ROADS</div>
+			</div>
+		</div>
+
+	</div>
+
+		<!-- TRACK 6 -->
+
+	<div class="track6">
+	
+		<div class="controlcontainer">
+			<div class="control" id="slowest6"></div>
+			<div class="control" id="slower6"></div>
+			<div class="control" id="slow6"></div>
+			<div class="control" id="normal6"></div>
+			<div class="control" id="fast6"></div>
+			<div class="control" id="faster6"></div>
+		</div>
+
+
+		<div class="textcontainer">
+			<div class="line">
+				<div class="letters">DAF</div>
+			</div>
+		</div>
+
+	</div>
+
+		<!-- TRACK 7 -->
+
+	<div class="track7">
+	
+		<div class="controlcontainer">
+			<div class="control" id="slowest7"></div>
+			<div class="control" id="slower7"></div>
+			<div class="control" id="slow7"></div>
+			<div class="control" id="normal7"></div>
+			<div class="control" id="fast7"></div>
+			<div class="control" id="faster7"></div>
+		</div>
+
+
+		<div class="textcontainer">
+			<div class="line">
+				<div class="letters">CHRONIC</div>
+			</div>
+			<div class="line">
+				<div class="letters">DOPE</div>
 			</div>
 		</div>
 

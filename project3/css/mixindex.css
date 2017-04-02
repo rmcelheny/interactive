@@ -5,54 +5,76 @@ body { overflow-x: hidden; }
 .track1 {
 	height:100vh;
 	width:100vw;
-	background-color:red;
 	position:relative;
-}
-
-.track1:hover {
 	background-color:black;
 }
 
+.track1:hover {
+	background-color:red;
+}
+
 .track2 {
-	background-color:gray;
 	width:100vw;
 	height:100vh;
 	position:relative;
+	transition:background-color 4s;
+}
+
+.track2:hover {
+	background-color:lightsteelblue;
 }
 
 .track3 {
-	background-color:coral;
 	width:100vw;
 	height:50vh;
 	position:relative;
+}
+
+.track3:hover{
+	background-color:coral;
 }
 
 .track4 {
-	background-color:pink;
 	width:100vw;
 	height:100vh;
 	position:relative;
+	transition:background-color 1s;
+}
+
+.track4:hover{
+	background-color:pink;
 }
 
 .track5 {
-	background-color:orange;
 	width:100vw;
 	height:50vh;
 	position:relative;
 }
 
+.track5:hover{
+	background-color:orange;
+}
+
 .track6 {
-	background-color:lime;
 	width:100vw;
 	height:100vh;
 	position:relative;
+	transition:background-color 2s;
+}
+
+.track6:hover{
+	background-color:lime;
 }
 
 .track7 {
-	background-color:cyan;
 	width:100vw;
 	height:100vh;
 	position:relative;
+	transition:background-color 2s;
+}
+
+.track7:hover {
+	background-color:indigo;
 }
 
 .textcontainer {

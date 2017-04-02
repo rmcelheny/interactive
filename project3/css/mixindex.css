@@ -30,9 +30,11 @@ body { overflow-x: hidden; }
 
 .track3 {
 	width:100vw;
-	height:50vh;
+	height:575px;
 	position:relative;
 }
+
+
 
 .track3:hover{
 	background-color:coral;
@@ -51,7 +53,7 @@ body { overflow-x: hidden; }
 
 .track5 {
 	width:100vw;
-	height:50vh;
+	height:575px;
 	position:relative;
 }
 
@@ -94,6 +96,14 @@ body { overflow-x: hidden; }
 	align-items:center;
 }
 
+#track3title{
+	height:499px;
+}
+
+#track5title{
+	height:499px;
+}
+
 .controlcontainer {
 	width:100vw;
 	position:absolute;
@@ -112,6 +122,157 @@ body { overflow-x: hidden; }
 	z-index:100;
 }
 
+/*track 2 playback im still waiting*/
+#slowest2 {
+	width:5%;
+}
+
+#slower2 {
+	width:5%;
+}
+
+#slow2 {
+	width:75%;
+}
+
+#normal2 {
+	width:5%;
+}
+
+#fast2 {
+	width:5%;
+}
+
+#faster2 {
+	width:5%;
+}
+
+/*track 3 playback go to him*/
+#slowest3 {
+	width:5%;
+}
+
+#slower3 {
+	width:5%;
+}
+
+#slow3 {
+	width:5%;
+}
+
+#normal3 {
+	width:75%;
+}
+
+#fast3 {
+	width:5%;
+}
+
+#faster3 {
+	width:5%;
+}
+
+/*TRACK 4 PLAYBACK REGGAE IS BACK*/
+
+#slowest4 {
+	width:5%;
+}
+
+#slower4 {
+	width:5%;
+}
+
+#slow4 {
+	width:15%;
+}
+
+#normal4 {
+	width:25%;
+}
+
+#fast4 {
+	width:25%;
+}
+
+#faster4 {
+	width:25%;
+}
+
+/*track 5 playback DIRTY BACK ROADS*/
+#slowest5 {
+	width:5%;
+}
+
+#slower5 {
+	width:5%;
+}
+
+#slow5 {
+	width:5%;
+}
+
+#normal5 {
+	width:75%;
+}
+
+#fast5 {
+	width:5%;
+}
+
+#faster5 {
+	width:5%;
+}
+
+/*track 6 playback DAFS*/
+#slowest6 {
+	width:5%;
+}
+
+#slower6 {
+	width:5%;
+}
+
+#slow6 {
+	width:40%;
+}
+
+#normal6 {
+	width:5%;
+}
+
+#fast6 {
+	width:40%;
+}
+
+#faster6 {
+	width:5%;
+}
+
+/*track 7 playback CHRONIC DOPE*/
+#slowest7 {
+	width:50%;
+}
+
+#slower7 {
+	width:30%;
+}
+
+#slow7 {
+	width:10%;
+}
+
+#normal7 {
+	width:4%;
+}
+
+#fast7 {
+	width:3%;
+}
+
+#faster7 {
+	width:3%;
+}
+
 /*AUDIO*/
 
 audio {
@@ -125,6 +286,13 @@ audio {
 	-moz-animation: spin 120s infinite linear;
 	-o-animation: spin 120s infinite linear;
 	-ms-animation: spin 120s infinite linear;
+}
+
+.slowersixty {
+	-webkit-animation: spin 60s infinite linear;
+	-moz-animation: spin 60s infinite linear;
+	-o-animation: spin 60s infinite linear;
+	-ms-animation: spin 60s infinite linear;
 }
 
 .slower {

@@ -1,5 +1,9 @@
 body { overflow-x: hidden; }
 
+.letter-definition {
+	display: none;
+}
+
 /*PAGE STYLING*/
 
 .track1 {
@@ -112,14 +116,6 @@ body { overflow-x: hidden; }
 	z-index:100;
 }
 
-.text {
-	position:absolute;
-	left:0;
-	top:0;
-	width:100%;
-}
-
-
 /*AUDIO*/
 
 audio {
@@ -129,10 +125,10 @@ audio {
 /*ANIMATION*/
 
 .slowest {
-	-webkit-animation: spin 60s infinite linear;
-	-moz-animation: spin 60s infinite linear;
-	-o-animation: spin 60s infinite linear;
-	-ms-animation: spin 60s infinite linear;
+	-webkit-animation: spin 120s infinite linear;
+	-moz-animation: spin 120s infinite linear;
+	-o-animation: spin 120s infinite linear;
+	-ms-animation: spin 120s infinite linear;
 }
 
 .slower {

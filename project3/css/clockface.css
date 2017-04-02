@@ -1,14 +1,10 @@
-.letter-definition {
-	display: none;
-}
-
 .letter {
 	display: inline-block;
 	vertical-align: top;
-	height: 20vh;
+	height: 210px;
+/*	width:100px;*/
 	position: relative;
-	margin-right: 1%;
-	margin-bottom: 1%;
+	margin: 1%;
 }
 
 .letter-inside {
@@ -20,7 +16,7 @@
 }
 
 .space {
-	width:10px;
+	width:5vw;
 }
 
 .letter .a {
@@ -51,7 +47,7 @@
 
 .a .middle-a {
 	height:4px;
-	width:45%;
+	width:38px;
 	top:35%;
 	background-color:white;
 	position:absolute;
@@ -73,22 +69,22 @@
 .b .diag-up {
 	height:4px;
 	position:absolute;
-	top:2%;
-	left:0;
+	top:3px;
+	left:2px;
 	width:100%;
 	background-color:white;
-	transform: rotate(22deg);
+	transform: rotate(21deg);
 	transform-origin:0 0;
 }
 
 .b .diag-down {
 	height:4px;
-	width:97%;
-	left:0;
+	width:100px;
+	left:-1px;
 	position:absolute;
 	top:27%;
 	background-color:white;
-	transform: rotate(-22deg);
+	transform: rotate(-23deg);
 }
 
 #bbottom {
@@ -96,7 +92,7 @@
 }
 
 #bbbottom {
-	top:88%;
+	top:186px;
 }
 
 .b-mid-right {
@@ -147,7 +143,7 @@
 	width:4px;
 	background:white;
 	position:absolute;
-	top:2%;
+	top:6px;
 	left:0;
 	bottom:0;
 }
@@ -157,7 +153,7 @@
 	width:92%;
 	position:absolute;
 	top:2%;
-	left:0;
+	left:1px;
 	background-color:white;
 	transform: rotate(22deg);
 	transform-origin:0 0;
@@ -167,7 +163,7 @@
 	height:4px;
 	width:89%;
 	position:absolute;
-	top:88%;
+	top:189px;
 	left:0;
 	background-color:white;
 	transform: rotate(-22deg);
@@ -176,9 +172,9 @@
 .d .mid-right {
     width:4px;
     position: absolute;
-    top: 19%;
+    top: 39px;
     bottom: 16%;
-    right: 15%;
+    right: 13px;
     background-color: white;
 }
 
@@ -333,7 +329,7 @@
 	right:0;
 }
 
-.letter .i {
+.i {
 	width:30px;
 }
 
@@ -341,8 +337,8 @@
 	width:4px;
 	background-color:white;
 	position:absolute;
-	top:0;
-	bottom:0;
+	top:4px;
+	bottom:-1px;
 }
 
 .letter .j {
@@ -360,9 +356,9 @@
 
 .j .jbottom {
 	height:4px;
-	width:89%;
+	width:89px;
 	position:absolute;
-	top:88%;
+	top:189px;
 	right:0;
 	background-color:white;
 	transform: rotate(202deg);
@@ -481,7 +477,7 @@
     transform-origin:bottom;
 }
 
-.letter .n {
+.n {
 	width:51px;
 }
 
@@ -514,14 +510,9 @@
     transform-origin:bottom;
 }
 
-.letter .alt-o {
+.alt-o {
 	height:210px;
 	width:210px;
-}
-
-.alt-o .circle {
-	height:100%;
-	width:100%;
 	border:4px white solid;
 	border-radius:50%;
 }
@@ -682,7 +673,7 @@
     transform-origin:top;
 }
 
-.letter .s {
+.s {
     width: 150px;
     margin-left: -50px;
 }
@@ -702,8 +693,8 @@
     height: 4px;
     width: 50%;
     position: absolute;
-    top: 88%;
-    left: 27%;
+    top: 187px;
+    left: 51px;
 	background-color:white;
     transform: rotate(202deg);
 }
@@ -712,8 +703,8 @@
     height: 4px;
     width: 50%;
     position: absolute;
-    top: 2%;
-    left: 50%;
+    top: 0;
+    left: 77px;
 	background-color:white;
     transform: rotate(22deg);
     transform-origin: 0 0;
@@ -748,7 +739,7 @@
 	width:4px;
 	background:white;
 	position:absolute;
-	top:2%;
+	top:0;
 	left:0;
 	bottom:0;
 }
@@ -757,8 +748,8 @@
 	width:4px;
 	background:white;
 	position:absolute;
-	top:2%;
-	bottom:19%;
+	top:0;
+	bottom:38px;
 	right:0;
 }
 
@@ -769,7 +760,7 @@
 	right:0;
 	background-color:white;
 	transform: rotate(-22deg);
-	top:88%;
+	top:187px;
 }
 
 .letter .v {
@@ -866,7 +857,7 @@
     background-color: white;
     position: absolute;
     top: 0;
-    bottom:0;
+    bottom:-4px;
     left:0;
     transform: rotate(-13deg);
     transform-origin:top;
@@ -877,7 +868,7 @@
     background-color: white;
     position: absolute;
     top: 0;
-    bottom:0;
+ 	bottom:-4px;
     right:0;
     transform: rotate(13deg);
     transform-origin:top;
@@ -903,7 +894,7 @@
 	width:89%;
 	position:absolute;
 	top:35%;
-	right:15%;
+	right:18px;
 	background-color:white;
 	transform: rotate(202deg);
 }
@@ -925,10 +916,11 @@
 
 .z .bottom {
 	height:4px;
+	width:80px;
 	background:white;
 	position:absolute;
-	bottom:0;
-	left:18%;
+	bottom:2px;
+	left:31px;
 	right:0;
 }
 
@@ -938,7 +930,7 @@
 	position:absolute;
 	top:0%;
 	left:0;
-	right:18%;
+	width:80px;
 }
 /*
 .spin {

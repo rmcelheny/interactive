@@ -903,7 +903,12 @@ $(function(){
   // CLICK TO PAUSE TRACKS//
 
   $('.track1').click(function(){
-        $('.spin').toggleClass('pause');
+        $('.spin1').toggleClass('pause');
+        $('.spin2').toggleClass('pause');
+        $('.spin3').toggleClass('pause');
+        $('.spin4').toggleClass('pause');
+        $('.spin5').toggleClass('pause');
+        $('.spin6').toggleClass('pause');
         var myAudio = document.getElementById("trackone");
         if (myAudio.paused) {
           myAudio.play();
@@ -913,7 +918,12 @@ $(function(){
     });
 
   $('.track2').click(function(){
-        $('.spin').toggleClass('pause');
+        $('.spin1').toggleClass('pause');
+        $('.spin2').toggleClass('pause');
+        $('.spin3').toggleClass('pause');
+        $('.spin4').toggleClass('pause');
+        $('.spin5').toggleClass('pause');
+        $('.spin6').toggleClass('pause');
         var myAudio = document.getElementById("tracktwo");
         if (myAudio.paused) {
           myAudio.play();
@@ -923,7 +933,12 @@ $(function(){
     });
 
     $('.track3').click(function(){
-        $('.spin').toggleClass('pause');
+        $('.spin1').toggleClass('pause');
+        $('.spin2').toggleClass('pause');
+        $('.spin3').toggleClass('pause');
+        $('.spin4').toggleClass('pause');
+        $('.spin5').toggleClass('pause');
+        $('.spin6').toggleClass('pause');
         var myAudio = document.getElementById("trackthree");
         if (myAudio.paused) {
           myAudio.play();
@@ -933,7 +948,12 @@ $(function(){
     });
 
   $('.track4').click(function(){
-        $('.spin').toggleClass('pause');
+        $('.spin1').toggleClass('pause');
+        $('.spin2').toggleClass('pause');
+        $('.spin3').toggleClass('pause');
+        $('.spin4').toggleClass('pause');
+        $('.spin5').toggleClass('pause');
+        $('.spin6').toggleClass('pause');
         var myAudio = document.getElementById("trackfour");
         if (myAudio.paused) {
           myAudio.play();
@@ -943,7 +963,12 @@ $(function(){
     });
 
     $('.track5').click(function(){
-        $('.spin').toggleClass('pause');
+        $('.spin1').toggleClass('pause');
+        $('.spin2').toggleClass('pause');
+        $('.spin3').toggleClass('pause');
+        $('.spin4').toggleClass('pause');
+        $('.spin5').toggleClass('pause');
+        $('.spin6').toggleClass('pause');
         var myAudio = document.getElementById("trackfive");
         if (myAudio.paused) {
           myAudio.play();
@@ -953,7 +978,12 @@ $(function(){
     });
 
     $('.track6').click(function(){
-        $('.spin').toggleClass('pause');
+        $('.spin1').toggleClass('pause');
+        $('.spin2').toggleClass('pause');
+        $('.spin3').toggleClass('pause');
+        $('.spin4').toggleClass('pause');
+        $('.spin5').toggleClass('pause');
+        $('.spin6').toggleClass('pause');
         var myAudio = document.getElementById("tracksix");
         if (myAudio.paused) {
           myAudio.play();
@@ -963,7 +993,12 @@ $(function(){
     });
 
       $('.track7').click(function(){
-        $('.spin').toggleClass('pause');
+        $('.spin1').toggleClass('pause');
+        $('.spin2').toggleClass('pause');
+        $('.spin3').toggleClass('pause');
+        $('.spin4').toggleClass('pause');
+        $('.spin5').toggleClass('pause');
+        $('.spin6').toggleClass('pause');
         var myAudio = document.getElementById("trackseven");
         if (myAudio.paused) {
           myAudio.play();

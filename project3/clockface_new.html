@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Clock face</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/clockface.css">
+
+	<style>
+		body {
+			background-color:green;
+		}
+
+		.letter-definition {
+			display:inline-block;
+		}
+	</style>
+</head>
+
+<body>
+
+<!-- LETTER DEFINITION -->
+
+<div class="letter-definition" data-character=" ">
+    <div class="space">
+    	<div class="letter wordspace"> </div>
+    </div>
+</div>
+
+<div class="letter-definition" data-character="A">
+   <div class="letter a">
+		<div class="letter-inside">
+			<div class="left-diag spin4">   </div>
+			<div class="right-diag spin4">  </div>
+			<div class="middle-a spin6">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="B">
+   <div class="letter b">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="diag-up spin6"> </div>
+			<div class="diag-down spin6"> </div>
+			<div class="diag-up spin6" id="bbottom"> </div>
+			<div class="diag-down spin6" id="bbbottom"> </div>
+			<div class="b-mid-right spin5"> </div>
+			<div class="middle-a spin6">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="C">
+    <div class="letter c">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="top spin6">  </div>
+			<div class="bottom spin6">  </div>
+		</div>
+	</div>
+</div>
+
+
+<div class="letter-definition" data-character="D">
+   <div class="letter d">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="diag-up spin6"> </div>
+			<div class="dbottom spin6"> </div>
+			<div class="mid-right spin5"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="E">
+   <div class="letter e">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="top spin6">  </div>
+			<div class="bottom spin6">  </div>
+			<div class="middle-e spin6"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="F">
+	<div class="letter f">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="top spin6">  </div>
+			<div class="middle-e spin6"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="G">
+    <div class="letter g">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="top spin6">  </div>
+			<div class="bottom spin6">  </div>
+			<div class="right-g spin5"> </div>
+			<div class="hook-g spin6"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="H">
+	<div class="letter h">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="right spin3">  </div>
+			<div class="middle-e spin6">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="I">
+	<div class="letter i skinny">
+		<div class="letter-inside">
+			<div class="middle spin2">   </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="J">
+   <div class="letter j">
+		<div class="letter-inside">
+			<div class="right spin3">   </div>
+			<div class="jbottom spin2"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="K">
+  	<div class="letter k">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="diag-down spin6">  </div>
+			<div class="diag-down-long spin4">  </div>
+		</div>
+	</div>
+
+</div>
+
+<div class="letter-definition" data-character="L">
+ 	<div class="letter l">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="bottom spin6">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="M">
+   <div class="letter m">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="right-diag spin4">  </div>
+			<div class="left-diag spin4">   </div>
+			<div class="right spin3">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="N">
+    <div class="letter n">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="right-diag spin4">  </div>
+			<div class="right spin3">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="O">
+  	<div class="letter alt-o">
+		<div class="letter-inside">
+			<div class="circle"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="P">
+   <div class="letter p">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="top spin6">  </div>
+			<div class="middle-e spin6"> </div>
+			<div class="rightp spin5"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="Q">
+	<div class="letter q">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="right spin3">  </div>
+			<div class="top spin6">  </div>
+			<div class="bottom spin6">  </div>
+			<div class="qdiag spin4" id="qtail"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="R">
+ 	<div class="letter r">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="top spin6">  </div>
+			<div class="middle-e spin6"> </div>
+			<div class="rightp spin5"> </div>
+			<div class="diag-down-long spin4">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="S">
+	<div class="letter s">
+		<div class="letter-inside">
+			<div class="right-diag spin4">  </div>
+			<div class="diag-up spin6"> </div>
+			<div class="jbottom spin6"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="T">
+	<div class="letter t">
+		<div class="letter-inside">
+			<div class="top spin6">  </div>
+			<div class="middle spin2">   </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="U">
+	<div class="letter u">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="diag-down spin6" id="ubottom"> </div>
+			<div class="right spin3">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="V">
+	<div class="letter v">
+		<div class="letter-inside">
+			<div class="right-diag spin4">  </div>
+			<div class="left-diag spin4">   </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="W">
+	<div class="letter w">
+		<div class="letter-inside">
+			<div class="left spin1">   </div>
+			<div class="left-diag spin4">   </div>
+			<div class="right-diag spin4">  </div>
+			<div class="right spin3">  </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="X">
+	<div class="letter x">
+		<div class="letter-inside">
+			<div class="right-diag spin4">  </div>
+			<div class="left-diag spin4">   </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="Y">
+	<div class="letter y">
+		<div class="letter-inside">
+			<div class="left-diag spin4">   </div>
+			<div class="jbottom spin6"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="letter-definition" data-character="Z">
+  	<div class="letter z">
+		<div class="letter-inside">
+			<div class="left-diag spin4">  </div>
+			<div class="bottom spin6"> </div>
+			<div class="top spin6"> </div>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>

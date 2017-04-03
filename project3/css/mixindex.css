@@ -52,22 +52,24 @@ body { overflow-x: hidden; }
 	width:100vw;
 	height:100vh;
 	position:relative;
-	transition:background-color 2s;
+	transition:background-color 1s;
 }
 
 .track6:hover{
 	background-color:lime;
+	transition:all 2s ease-in;
 }
 
 .track7 {
 	width:100vw;
 	height:100vh;
 	position:relative;
-	transition:background-color 2s;
+	transition:background-color 1s;
 }
 
 .track7:hover {
 	background-color:indigo;
+	transition:all 10s ease-in;
 }
 
 .textcontainer {

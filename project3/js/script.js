@@ -830,7 +830,6 @@ $(function(){
     document.getElementById('trackseven').play();
     document.getElementById('trackseven').playbackRate = 0.5;
     cleanState();
-    // $('.spin1').addClass('slowest');
     $('.spin6').addClass('slowest');
   }
   });

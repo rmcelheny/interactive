@@ -160,7 +160,7 @@ $(function(){
 
 
 
-// TRACK 2 Playback 
+// TRACK 2 Playback  i'm stil waiting
 
   $('#slowest2').mouseenter(function(){
     if (!$('.spin1').hasClass('pause')){
@@ -283,7 +283,7 @@ $(function(){
 
 
 
-// TRACK 3 Playback 
+// TRACK 3 Playback go to him
 
   $('#slowest3').mouseenter(function(){
     if (!$('.spin1').hasClass('pause')){
@@ -425,20 +425,20 @@ $(function(){
     cleanState();
     $('.spin1').addClass('slowest');
     $('.spin2').addClass('slowest');
-    $('.spin3').addClass('slowest');
-    $('.spin4').addClass('slowest');
-    $('.spin5').addClass('slowest');
-    $('.spin6').addClass('slowest');
+    // $('.spin3').addClass('slowest');
+    // $('.spin4').addClass('slowest');
+    // $('.spin5').addClass('slowest');
+    // $('.spin6').addClass('slowest');
   }
   });
 
   $('#slowest4').mouseout(function(){
     $('.spin1').removeClass('slowest');
     $('.spin2').removeClass('slowest');
-    $('.spin3').removeClass('slowest');
-    $('.spin4').removeClass('slowest');
-    $('.spin5').removeClass('slowest');
-     $('.spin6').removeClass('slowest');           
+    // $('.spin3').removeClass('slowest');
+    // $('.spin4').removeClass('slowest');
+    // $('.spin5').removeClass('slowest');
+    //  $('.spin6').removeClass('slowest');           
     document.getElementById('trackfour').pause();
   });
 
@@ -450,9 +450,9 @@ $(function(){
     $('.spin1').addClass('slower');
     $('.spin2').addClass('slower');
     $('.spin3').addClass('slower');
-    $('.spin4').addClass('slower');
-    $('.spin5').addClass('slower');
-    $('.spin6').addClass('slower');
+    // $('.spin4').addClass('slower');
+    // $('.spin5').addClass('slower');
+    // $('.spin6').addClass('slower');
   }
   });
 
@@ -460,9 +460,9 @@ $(function(){
     $('.spin1').removeClass('slower');
     $('.spin2').removeClass('slower');
     $('.spin3').removeClass('slower');
-    $('.spin4').removeClass('slower');
-    $('.spin5').removeClass('slower');
-    $('.spin6').removeClass('slower');
+    // $('.spin4').removeClass('slower');
+    // $('.spin5').removeClass('slower');
+    // $('.spin6').removeClass('slower');
     document.getElementById('trackfour').pause();
   });
 
@@ -476,8 +476,8 @@ $(function(){
     $('.spin2').addClass('slow');
     $('.spin3').addClass('slow');
     $('.spin4').addClass('slow');
-    $('.spin5').addClass('slow');
-    $('.spin6').addClass('slow');
+    // $('.spin5').addClass('slow');
+    // $('.spin6').addClass('slow');
   }
   });
 
@@ -486,8 +486,8 @@ $(function(){
     $('.spin2').removeClass('slow');
     $('.spin3').removeClass('slow');
     $('.spin4').removeClass('slow');
-    $('.spin5').removeClass('slow');
-    $('.spin6').removeClass('slow');
+    // $('.spin5').removeClass('slow');
+    // $('.spin6').removeClass('slow');
     document.getElementById('trackfour').pause();
   });
 
@@ -501,7 +501,7 @@ $(function(){
     $('.spin3').addClass('normal');
     $('.spin4').addClass('normal');
     $('.spin5').addClass('normal');
-    $('.spin6').addClass('normal');
+    // $('.spin6').addClass('normal');
   }
   });
 
@@ -511,7 +511,7 @@ $(function(){
     $('.spin3').removeClass('normal');
     $('.spin4').removeClass('normal');
     $('.spin5').removeClass('normal');
-    $('.spin6').removeClass('normal');
+    // $('.spin6').removeClass('normal');
     document.getElementById('trackfour').pause();
   });
 

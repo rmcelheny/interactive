@@ -1,0 +1,43 @@
+body {
+	background-color:black;
+	overflow:hidden;
+}
+
+.container {
+	width:100vw;
+	height:100vh;
+	display:flex;
+	flex-direction:row;
+    flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+} 
+
+.information {
+	color:white;
+	width: 62vw;
+    animation-name:fadetext;
+	animation-duration:4s;
+}
+
+@keyframes fadetext{
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+.pauline {
+	font-style: italic;
+}
+
+
+.info {
+    position:fixed;
+    bottom:5vh;
+    left:5vh;
+/*    background-color:red;*/
+    z-index:1;
+}   
+
+a {
+	color:white;
+}

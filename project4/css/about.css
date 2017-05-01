@@ -1,0 +1,16 @@
+.information {
+	width: 62vw;
+    left: 19vw;
+    top: 28vw;
+    animation-name:fadetext;
+	animation-duration:4s;
+}
+
+@keyframes fadetext{
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+.pauline {
+	font-style: italic;
+}

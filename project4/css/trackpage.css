@@ -15,7 +15,7 @@ body {
 
 .information {
 	color:white;
-	width: 62vw;
+	width: 50vw;
     animation-name:fadetext;
 	animation-duration:4s;
 }
@@ -40,4 +40,40 @@ body {
 
 a {
 	color:white;
+}
+
+.navigationbar {
+    position:fixed;
+    right:5vh;
+    left:5vh;
+    bottom:5vh;
+/*    background-color:yellow;*/
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100000;
+    cursor:default;
+    color:white;
+    animation-name:fadetext;
+	animation-duration:4s;
+}
+
+#year:hover {
+    color:black;
+    background-color:white;
+}
+
+#type:hover {
+    color:black;
+    background-color:white;
+}
+
+#selrec:hover {
+    color:black;
+    background-color:white;
+}
+
+a {
+	text-decoration:none;
 }

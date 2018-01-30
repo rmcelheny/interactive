@@ -399,7 +399,7 @@
 }
 
 .letter .l {
-		width:100px;
+	width:100px;
 }
 
 .l .left {
@@ -856,7 +856,7 @@
     position: absolute;
     top: 0;
     bottom:-4px;
-    left:0;
+    left:25px;
     transform: rotate(-13deg);
     transform-origin:top;
 }
@@ -867,7 +867,7 @@
     position: absolute;
     top: 0;
  	bottom:-4px;
-    right:0;
+    right:25px;
     transform: rotate(13deg);
     transform-origin:top;
 }
@@ -902,7 +902,7 @@
 }
 
 .z .left-diag {
-	 width:4px;
+	width:4px;
     background-color: white;
     position: absolute;
     top: 0;
@@ -918,7 +918,7 @@
 	background:white;
 	position:absolute;
 	bottom:2px;
-	left:31px;
+	left:15px;
 	right:0;
 }
 

@@ -4,6 +4,45 @@ body { overflow-x: hidden; }
 	display: none;
 }
 
+.info {
+	width:50px;
+	height:50px;
+	position:fixed;
+	top:2vh;
+	right:4vw;
+	z-index:500000;
+}
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+.infoline {
+	height:50px;
+	width:4px;
+	background-color:lightgray;
+	position:fixed;
+	top:2vh;
+	right:4vw;
+}
+
+#ainfo {
+	transform:rotate(7deg);
+}
+
+#binfo {
+	transform:rotate(-15deg);
+}
+
+#cinfo {
+	transform:rotate(37deg);
+}
+
+#dinfo {
+	transform:rotate(90deg);
+}
+
 /*PAGE STYLING*/
 
 .track2 {

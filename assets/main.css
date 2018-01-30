@@ -1,1 +1,21 @@
-/* Put your CSS here! */
+  body {
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:5vh;
+  }
+
+  a {
+  	color:blue;
+  }
+
+  a:hover {
+  	color:blue;
+  	background-color:black;
+  }
+
+  a:visited {
+  	color:blue;
+  }
+
+  a:acvite {
+  	color:yellow;
+  }

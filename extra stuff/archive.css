@@ -1,0 +1,65 @@
+
+	body {
+		position:relative;
+		overflow:hidden;
+		font-family: 'Roboto Condensed', sans-serif;
+		background:			#f5f5f5;
+	}
+
+	.container {
+		top:15vh;
+		width:20000vh;
+		height:60vh;
+		position:relative;
+		left:100vw;
+		cursor:pointer;
+		background-color:red;
+		animation:slide 60s linear forwards;
+	}
+
+	.imgbox {
+		height:60vh;
+		display:inline-block;
+				border:2px dashed yellow;
+	}
+
+	img {
+		width:60vh;
+		height:60vh;
+		padding-right:100vw;
+	}
+
+	h1 {
+		position:absolute;
+		top:16px;
+		right:32px;
+		font-size:35px;
+		animation:skew 60s linear infinite;
+		font-weight:normal;
+		color:green;
+	}
+
+	.title {
+    	right: 207px;
+    	position: absolute;
+    	top: 39px;
+    	font-size: 35px;
+    	height: 50px;
+    	animation: skew 60s linear infinite;
+    	letter-spacing: 2px;
+  		color:green;
+	}
+
+	@keyframes slide {
+		from {transform: translate(100vw, 10vh);}
+		to {transform: translate(-6000vw, 10vh);}
+	}
+/*
+	@keyframes skew {
+		from {    	transform: skewX(0deg);}
+		to {    	transform: skewX(68deg);}
+	}*/
+
+	.pause {
+		animation-play-state: paused;
+	}

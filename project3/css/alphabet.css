@@ -1,0 +1,115 @@
+body {
+	background-color:blue;
+	overflow:hidden;
+}
+
+.letter-definition {
+	display:none;
+}
+
+.container {
+	width:100vw;
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	justify-content:flex-start;
+	align-items:center;
+}
+
+.line {
+	padding:10px;
+}
+
+#one {
+	padding-top:5vh;
+}
+
+
+.info {
+	width:50px;
+	height:50px;
+	position:fixed;
+	top:2vh;
+	right:4vw;
+	z-index:500000;
+}
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+.infoline {
+	height:50px;
+	width:4px;
+	background-color:lightgray;
+	position:fixed;
+	top:2vh;
+	right:4vw;
+}
+
+#ainfo {
+	transform:rotate(7deg);
+}
+
+#binfo {
+	transform:rotate(-15deg);
+}
+
+#cinfo {
+	transform:rotate(37deg);
+}
+
+#dinfo {
+	transform:rotate(90deg);
+}
+
+.spin {
+	-webkit-animation: spin 60s infinite linear;
+	-moz-animation: spin 60s infinite linear;
+	-o-animation: spin 60s infinite linear;
+	-ms-animation: spin 60s infinite linear;
+}
+
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); -webkit-transform-origin:bottom left;}
+	100% { -webkit-transform: rotate(360deg); -webkit-transform-origin:bottom left;}
+}
+
+.q .qdiag {
+
+	-webkit-animation: qdiaggg 60s infinite linear;
+	-moz-animation: qdiaggg 60s infinite linear;
+	-o-animation: qdiaggg 60s infinite linear;
+	-ms-animation: qdiaggg 60s infinite linear;
+}
+
+@-webkit-keyframes qdiaggg {
+	0% { -webkit-transform: rotate(0deg); -webkit-transform-origin:0% 0%;}
+	100% { -webkit-transform: rotate(360deg); -webkit-transform-origin:0% 0%;}
+}
+
+.l .bottom {
+	-webkit-animation: lbottomspin 120s infinite linear;
+	-moz-animation: lbottomspin 120s infinite linear;
+	-o-animation: lbottomspin 120s infinite linear;
+	-ms-animation: lbottomspin 120s infinite linear;
+}
+
+@-webkit-keyframes lbottomspin {
+	0% { -webkit-transform: rotate(0deg); -webkit-transform-origin:0% 0%;}
+	100% { -webkit-transform: rotate(-360deg); -webkit-transform-origin:0% 0%;}
+}
+
+.x {
+	-webkit-animation: xspin 60s infinite linear;
+	-moz-animation: xspin 60s infinite linear;
+	-o-animation: xspin 60s infinite linear;
+	-ms-animation: xspin 60s infinite linear;
+}
+
+@-webkit-keyframes xspin {
+	0% { -webkit-transform: rotate(0deg); -webkit-transform-origin:50% 50%;}
+	100% { -webkit-transform: rotate(360deg); -webkit-transform-origin:50% 50%;}
+}

@@ -35,6 +35,29 @@ $( document ).ready(function() {
             $(this).siblings('.title').css('display','none');
     });
 
+    $('#selrec').click(function(){
+        $('#year').toggle();
+        $('#type').toggle();
+        $('.year').hide();
+        $('.type').hide();
+        $('.title').hide();
+    })
+
+    $('#year').click(function(){
+        $('.year').toggle();
+        if ($('.title').css('display') == 'none'){
+            $('.title').show();
+        }
+        // $('.title').toggle()
+    })
+
+    $('#type').click(function(){
+        $('.type').toggle();
+       if ($('.title').css('display') == 'none'){
+            $('.title').show();
+        }
+    })
+
 
     // $('#btn1').click(function(){
     //         $(this).toggleClass('bold');

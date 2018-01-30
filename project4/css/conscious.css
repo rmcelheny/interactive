@@ -38,6 +38,68 @@ a {
 }
 
 
+.navigationbar {
+    position:fixed;
+    right:5vh;
+    left:5vh;
+    bottom:5vh;
+/*    background-color:yellow;*/
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100000;
+    cursor:default;
+
+}
+
+
+#selrec:hover {
+    background-color:black;
+    color:white;
+}
+
+
+#year {
+/*    width:115px;*/
+    display:none;
+}
+
+#year:hover {
+    background-color:black;
+    color:white;
+}
+
+#type {
+    display:none;
+}
+
+
+#type:hover {
+    background-color:black;
+    color:white;
+}
+
+.type {
+    display:none;
+    position:absolute;
+    top:2em;
+    left:15px;
+    cursor:default;
+    white-space:nowrap;
+}
+
+.year {
+    display:none;
+    position:absolute;
+    top:0;
+    left:15px;
+    cursor:default;
+    white-space:nowrap;
+}
+
+
+
 /*.circle {
     width:80vh;
     height:80vh;
@@ -78,17 +140,17 @@ a {
 
 .three {
     left:75vh;
-    top:35vh;
+    top:38vh;
 }
 
 .four {
     left: 69vh;
-    bottom: 19vh;
+    bottom: 15vh;
 }
 
 .five {
     left: 57vh;
-    bottom: 6vh;
+    bottom: 4vh;
 }
 
 .six {
@@ -97,18 +159,18 @@ a {
 }
 
 .seven {
-    bottom: 7vh;
+    bottom: 4vh;
     left:21vh;
 }
 
 .eight {
-    bottom: 20vh;
+    bottom: 15vh;
     left: 7vh;
 }
 
 .nine {
     left:0;
-    top:35vh;
+    top:38vh;
 }
 
 .ten {
@@ -159,3 +221,10 @@ a {
 .type {
     display:none;
 }
+
+
+@keyframes fadein {
+    from {color:white;}
+    to {color:black;}
+}
+

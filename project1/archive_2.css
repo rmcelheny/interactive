@@ -1,0 +1,249 @@
+
+	body {
+		position:relative;
+		overflow:hidden;
+		font-family: 'Roboto Condensed', sans-serif;
+		background:			#f5f5f5;
+	}
+
+	.container {
+		top:15vh;
+		width:220vh;
+		height:60vh;
+		position:fixed;
+		left:-60vh;
+		cursor:pointer;
+/*		background-color:red;*/
+	}
+
+	.imgbox {
+		height:60vh;
+		width:60vh;
+		display:inline-block;
+/*		background-color:pink;*/
+		position:absolute;
+		left:200vw;
+		animation:slide 2s linear forwards;
+	}
+
+	img {
+		width:60vh;
+		height:60vh;
+	}
+
+	#sixty {
+		/*animation-delay:1s;*/
+	}
+	#fiftynine {
+		animation-delay:1s;
+	}
+	#fiftyeight {
+		animation-delay:2s;
+	}
+	#fiftyseven {
+		animation-delay:3s;
+	}
+	#fiftysix {
+		animation-delay:4s;
+	}
+	#fiftyfive {
+		animation-delay:5s;
+	}
+	#fiftyfour {
+		animation-delay:6s;
+	}
+	#fiftythree {
+		animation-delay:7s;
+	}
+	#fiftytwo {
+		animation-delay:8s;
+	}
+	#fiftyone {
+		animation-delay:9s;
+	}
+	#fifty {
+		animation-delay:10s;
+	}
+	#fortynine {
+		animation-delay:11s;
+	}
+	#fortyeight {
+		animation-delay:12s;
+	}
+	#fortyseven {
+		animation-delay:13s;
+	}
+	#fortysix {
+		animation-delay:14s;
+	}
+	#fortyfive {
+		animation-delay:15s;
+	}
+	#fortyfour {
+		animation-delay:16s;
+	}
+	#fortythree {
+		animation-delay:17s;
+	}
+	#fortytwo {
+		animation-delay:18s;
+	}
+	#fortyone {
+		animation-delay:19s;
+	}
+	#forty {
+		animation-delay:20s;
+	}
+	#thirtynine {
+		animation-delay:21s;
+	}
+	#thirtyeight {
+		animation-delay:22s;
+	}
+	#thirtyseven {
+		animation-delay:23s;
+	}
+	#thirtysix {
+		animation-delay:24s;
+	}
+	#thirtyfive {
+		animation-delay:25s;
+	}
+	#thirtyfour {
+		animation-delay:26s;
+	}
+	#thirtythree {
+		animation-delay:27s;
+	}
+	#thirtytwo {
+		animation-delay:28s;
+	}
+	#thirtyone {
+		animation-delay:29s;
+	}
+	#thirty {
+		animation-delay:30s;
+	}
+	#twentynine {
+		animation-delay:31s;
+	}
+	#twentyeight {
+		animation-delay:32s;
+	}
+	#twentyseven {
+		animation-delay:33s;
+	}
+	#twentysix {
+		animation-delay:34s;
+	}
+	#twentyfive {
+		animation-delay:35s;
+	}
+	#twentyfour {
+		animation-delay:36s;
+	}
+	#twentythree {
+		animation-delay:37s;
+	}
+	#twentytwo {
+		animation-delay:38s;
+	}
+	#twentyone {
+		animation-delay:39s;
+	}
+	#twenty {
+		animation-delay:40s;
+	}
+	#nineteen {
+		animation-delay:41s;
+	}
+	#eighteen {
+		animation-delay:42s;
+	}
+	#seventeen {
+		animation-delay:43s;
+	}
+	#sixteen {
+		animation-delay:44s;
+	}
+	#fifteen {
+		animation-delay:45s;
+	}
+	#fourteen {
+		animation-delay:46s;
+	}
+	#thirteen {
+		animation-delay:47s;
+	}
+	#twelve {
+		animation-delay:48s;
+	}
+	#eleven {
+		animation-delay:49s;
+	}
+	#ten {
+		animation-delay:50s;
+	}	
+	#nine {
+		animation-delay:51s;
+	}
+	#eight {
+		animation-delay:52s;
+	}
+	#seven {
+		animation-delay:53s;
+	}
+	#six {
+		animation-delay:54s;
+	}
+	#five {
+		animation-delay:55s;
+	}
+	#four {
+		animation-delay:56s;
+	}
+	#three {
+		animation-delay:57s;
+	}
+	#two {
+		animation-delay:58s;
+	}
+	#one {
+		animation-delay:59s;
+	}
+
+	@keyframes slide {
+		from {transform: translate(200vw, 0);}
+		to {transform: translate(-200vw, 0);}
+	}
+
+	h1 {
+		position:absolute;
+		top:16px;
+		right:32px;
+		font-size:35px;
+		animation:skew 63s linear infinite;
+		font-weight:normal;
+		color:green;
+	}
+
+	.title {
+    	right: 207px;
+    	position: absolute;
+    	top: 39px;
+    	font-size: 35px;
+    	height: 50px;
+    	animation: skew 63s linear infinite;
+    	letter-spacing: 2px;
+  		color:green;
+	}
+
+
+	@keyframes skew {
+		from {    	transform: skewX(0deg);}
+		to {    	transform: skewX(68deg);}
+	}
+
+	.pause {
+		animation-play-state: paused;
+	}

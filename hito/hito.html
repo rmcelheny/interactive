@@ -47,6 +47,9 @@
     <video id="video" preload autoplay loop muted playsinline></video>
     <canvas id="canvas"></canvas>
 
+    <div class="image-container" style="opacity: 0;">
+      <img id="image" src="hito.jpg">
+    </div>
     <!-- <div id="errorMsg"></div> -->
 
     <!-- <p class="warning"><strong>Warning:</strong> if you're not using headphones, pressing play will cause feedback.</p> -->
@@ -65,10 +68,13 @@
 
   <script>
     window.onload = function() {
+      // DEFINE VARIABLES
       var video = document.getElementById('video');
       var canvas = document.getElementById('canvas');
       var context = canvas.getContext('2d');
+      var image = document.getElementById("image");
 
+    // MAKE VID AND CANVAS SAME SIZE
       var height = $('#video').height();
       var width = $('#video').width();
       console.log (width, height);
@@ -76,6 +82,7 @@
       canvas.height = height;
       canvas.width = width;
 
+      // IMPLEMENT TRACKER
       var tracker = new tracking.ObjectTracker('face');
       tracker.setInitialScale(4);
       tracker.setStepSize(2);
@@ -86,13 +93,17 @@
       tracker.on('track', function(event) {
         context.clearRect(0, 0, canvas.width, canvas.height);
 
+      // DRAW TEXT/IMAGE WHEN RECOGNIZED
         event.data.forEach(function(rect) {
-          context.strokeStyle = '#a64ceb';
+          context.strokeStyle = 'transparent';
           context.strokeRect(rect.x, rect.y, rect.width, rect.height);
           context.font = '11px Helvetica';
           context.fillStyle = "#fff";
-          context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
-          context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
+          context.drawImage(image, rect.x, rect.y, rect.width, rect.height);
+          context.fillText('hito steyerl lecture ', rect.x + rect.width + 5, rect.y + 11);
+          context.fillText('february 21 2018 6:00p.m.', rect.x + rect.width + 5, rect.y + 22);
+          context.fillText('E.I.K. 26 edgewood', rect.x + rect.width + 5, rect.y + 33);
+
         });
       });
 

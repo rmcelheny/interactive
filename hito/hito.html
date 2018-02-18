@@ -32,8 +32,13 @@
 
 <body>
 
+  <div class="container">
     <video id="video" preload autoplay loop muted playsinline></video>
+  </div>
+
+  <div class="container">
     <canvas id="canvas"></canvas>
+  </div>
 
     <div class="image-container" style="opacity: 0;">
       <img id="image" src="hito.jpg">
@@ -70,7 +75,8 @@
       tracker.setStepSize(2);
       tracker.setEdgesDensity(0.1);
 
-      tracking.track('#video', tracker, { camera: true });
+
+      tracking.track('#video', tracker, { camera: true, facingMode: "user" });
 
       tracker.on('track', function(event) {
         context.clearRect(0, 0, canvas.width, canvas.height);

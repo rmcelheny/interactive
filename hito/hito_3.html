@@ -15,7 +15,7 @@
 
   	.container {
 	  	display:flex;
-		flex-direction:row;
+		flex-direction:column;
 		justify-content:center;
 		align-items:center;
 		position:fixed;
@@ -31,8 +31,18 @@
   	}
   	#canvas {
   		/*height:50vh;*/
+/*  		border:2px red solid;*/
   		z-index:0;
   	}
+
+  	#instr {
+  		width:100vw;
+  		text-align:center;
+  		position:absolute;
+  		bottom:10vh;
+  		color:red;
+  	}
+
 
 	</style>
 </head>
@@ -45,13 +55,12 @@
     <div class="container">
     	<canvas id="canvas"  width="500" height="888" ></canvas>
     </div>
+    <div id="instr">* point camera at face *</div>
 
     <!-- IMAGES HERE -->
 	  <div class="image-container" style="opacity: 0;">
 	    <img id="image" src="hito.jpg">
 	  </div>
-
-
 
 	  <!-- web RTC SCRIPTS -->
 	  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
@@ -63,7 +72,14 @@
 
 	<script>
 
-		   		 window.onload = function() {
+		window.onload = function() {
+
+				var inst = document.getElementById('instr');
+				function disappear() {
+					inst.style.display = "none"
+				}
+				setTimeout(disappear, 5000);
+
 
 			      // DEFINE VARIABLES
 			      var video = document.getElementById('gum-local');
@@ -73,12 +89,12 @@
 
 
 			      // canvas same size as window
-					var positionInfo = video.getBoundingClientRect();
-					var height = positionInfo.height;
-					var width = positionInfo.width;
+					// var positionInfo = video.getBoundingClientRect();
+					// var height = positionInfo.height;
+					// var width = positionInfo.width;
 
-					canvas.height = height;
-					canvas.width = width;
+					// canvas.height = height;
+					// canvas.width = width;
 
 			      // IMPLEMENT TRACKER
 			      var tracker = new tracking.ObjectTracker('face');
@@ -91,16 +107,17 @@
 			      tracker.on('track', function(event) {
 			        context.clearRect(0, 0, canvas.width, canvas.height);
 
+
 			      // DRAW TEXT/IMAGE WHEN RECOGNIZED
 			        event.data.forEach(function(rect) {
 			          context.strokeStyle = 'transparent';
 			          context.strokeRect(rect.x, rect.y, rect.width, rect.height);
-			          context.font = '14px Helvetica';
+			          context.font = '18px Helvetica';
 			          context.fillStyle = "#fff";
 			          context.drawImage(image, rect.x, rect.y, rect.width, rect.height);
-			          context.fillText('hito steyerl lecture ', rect.x + rect.width + 5, rect.y + 14);
-			          context.fillText('february 21 2018 6:00pm', rect.x + rect.width + 5, rect.y + 28);
-			          context.fillText('E.I.K. 26 edgewood', rect.x + rect.width + 5, rect.y + 42);
+			          context.fillText('hito steyerl lecture ', rect.x + rect.width + 5, rect.y + 18);
+			          context.fillText('february 21 2018 6:00pm', rect.x + rect.width + 5, rect.y + 36);
+			          context.fillText('E.I.K. 26 edgewood', rect.x + rect.width + 5, rect.y + 54);
 
 			        });
 			      });

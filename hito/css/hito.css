@@ -20,3 +20,23 @@
 	border:2px red solid;
 	z-index:11111;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+	
+	#video {
+		height:750px;
+	}
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+	#video {
+		width:750px;
+		height:1334px;
+	}
+}
+

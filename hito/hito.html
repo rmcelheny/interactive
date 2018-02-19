@@ -9,24 +9,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- <meta name="description" content="WebRTC code samples"> -->
-  <!-- <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1"> -->
-  <!-- <meta itemprop="description" content="Client-side WebRTC code samples"> -->
-  <!-- <meta itemprop="image" content="../../../images/webrtc-icon-192x192.png"> -->
-  <!-- <meta itemprop="name" content="WebRTC code samples"> -->
-  <!-- <meta name="mobile-web-app-capable" content="yes"> -->
-  <!-- <meta id="theme-color" name="theme-color" content="#ffffff"> -->
-
-  <!-- <base target="_blank"> -->
-
   <title>Hito</title>
-
 <!-- TRACKING.JS FILES -->
   <script src="js/tracking-min.js"></script>
   <script src="js/face-min.js"></script>
-   <!-- <script src="../node_modules/dat.gui/build/dat.gui.min.js"></script> -->
-  <!-- <script src="js/stats.min.js"></script> -->
+   <script src="js/dat.gui.min.js"></script>
+<!--   <script src="js/stats.min.js"></script> -->
 
+<!-- CSS -->
   <link rel="stylesheet" href="css/hito.css">
 </head>
 
@@ -40,9 +30,10 @@
     <canvas id="canvas"></canvas>
   </div>
 
-    <div class="image-container" style="opacity: 0;">
-      <img id="image" src="hito.jpg">
-    </div>
+<!-- IMAGES HERE -->
+  <div class="image-container" style="opacity: 0;">
+    <img id="image" src="hito.jpg">
+  </div>
   
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -75,8 +66,14 @@
       tracker.setStepSize(2);
       tracker.setEdgesDensity(0.1);
 
+      // if on mobile, use front-facing camera.
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       tracking.track('#video', tracker, { camera: true, facingMode: "environment" });
+      } else {
+        tracking.track('#video', tracker, { camera: true, facingMode: "user" });
+      };
 
-      tracking.track('#video', tracker, { camera: true, facingMode: "user" });
+      // tracking.track('#video', tracker, { camera: true, facingMode: "user" });
 
       tracker.on('track', function(event) {
         context.clearRect(0, 0, canvas.width, canvas.height);

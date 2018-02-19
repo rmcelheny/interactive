@@ -15,7 +15,7 @@ var video = document.querySelector('video');
 var constraints = window.constraints = {
   audio: false,
   video: true,
-  facingMode: { exact: "environment" }
+  video: { facingMode: { exact: "environment" } },
 };
 
 function handleSuccess(stream) {

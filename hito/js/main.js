@@ -26,13 +26,11 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
       video: true,
       video: { facingMode: { exact: "environment" } },
     };
-    alert ('mobile');
 } else {
       var constraints = window.constraints = {
       audio: false,
       video: true,
     };
-    console.log ('desktop');
 }
 
 

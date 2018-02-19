@@ -46,17 +46,16 @@
 
   <script>
     window.onload = function() {
+     
       // DEFINE VARIABLES
       var video = document.getElementById('video');
       var canvas = document.getElementById('canvas');
       var context = canvas.getContext('2d');
       var image = document.getElementById("image");
 
-      // MAKE VID AND CANVAS SAME SIZE
-      var height = $('#video').height();
-      var width = $('#video').width();
-      console.log (width, height);
-
+      // CANVAS SAME SIZE AS WINDOW
+      var height = $(window).height();
+      var width = $(window).width();
       canvas.height = height;
       canvas.width = width;
 

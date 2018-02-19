@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+  
+
+  <title>getUserMedia</title>
+
+
+</head>
+
+<body>
+
+  <div id="container">
+
+    
+    <video id="gum-local" autoplay playsinline></video>
+
+    
+  </div>
+
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/ga.js"></script>
+  <script>
+    var constraints = {
+      facingMode: { exact: "environment" }
+    };
+  </script>
+
+</body>
+</html>

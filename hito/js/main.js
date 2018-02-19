@@ -12,11 +12,32 @@ var errorElement = document.querySelector('#errorMsg');
 var video = document.querySelector('video');
 
 // Put variables in global scope to make them available to the browser console.
-var constraints = window.constraints = {
-  audio: false,
-  video: true,
-  video: { facingMode: { exact: "environment" } },
-};
+// var constraints = window.constraints = {
+//   audio: false,
+//   video: true,
+//   video: { facingMode: { exact: "environment" } },
+// };
+
+var constraints;
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    var constraints = window.constraints = {
+      audio: false,
+      video: true,
+      video: { facingMode: { exact: "environment" } },
+    };
+    alert ('mobile');
+} else {
+      var constraints = window.constraints = {
+      audio: false,
+      video: true,
+    };
+    console.log ('desktop');
+}
+
+
+
+
 
 function handleSuccess(stream) {
   var videoTracks = stream.getVideoTracks();

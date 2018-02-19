@@ -4,28 +4,101 @@
 <html>
 <head>
 
+  <title>hito</title>
   
-
-  <title>getUserMedia</title>
-
   <style>
+  	body {
+  		overflow:hidden;
+  		margin:none;
+  	}
   	#gum-local {
   		height:100vh;
+  		position:absolute;
+  		top:0;
+  		left:0;
+  		z-index:-11111111;
   	}
-</style>
+  	#canvas {
+  		z-index:111111;
+  		border:2px solid red;
+  	}
+	</style>
+
+	<!-- TRACKING.JS FILES -->
+
 
 </head>
 
 <body>
 
     <div id="container">
-       <video id="gum-local" autoplay playsinline></video>
+       <video id="gum-local" preload autoplay loop muted playsinline></video>
     </div>
+    <canvas id="canvas"></canvas>
+
+    <!-- IMAGES HERE -->
+	  <div class="image-container" style="opacity: 0;">
+	    <img id="image" src="hito.jpg">
+	  </div>
 
   <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
   <script src="js/common.js"></script>
   <script src="js/main.js"></script>
-<!--   <script src="js/ga.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="js/tracking-min.js"></script>
+	  <script src="js/face-min.js"></script>
+
+	<script>
+	    window.onload = function() {
+	     
+	      // DEFINE VARIABLES
+	      var video = document.getElementById('gum-local');
+	      var canvas = document.getElementById('canvas');
+	      var context = canvas.getContext('2d');
+	      var image = document.getElementById("image");
+
+	      // CANVAS SAME SIZE AS WINDOW
+	      var height = $(window).height();
+	      var width = $(window).width();
+	      canvas.height = height;
+	      canvas.width = width;
+
+	      // if (width >= height) {
+	      // 		$('#gum-local').height = height;
+	      // } else if (width <= height) {
+	      // 		$('#gum-local').width = width;
+	      // }
+
+	      // IMPLEMENT TRACKER
+	      var tracker = new tracking.ObjectTracker('face');
+	      tracker.setInitialScale(4);
+	      tracker.setStepSize(2);
+	      tracker.setEdgesDensity(0.1);
+
+	      tracking.track('#gum-local', tracker);
+
+	      tracker.on('track', function(event) {
+	        context.clearRect(0, 0, canvas.width, canvas.height);
+
+	      // DRAW TEXT/IMAGE WHEN RECOGNIZED
+	        event.data.forEach(function(rect) {
+	          context.strokeStyle = 'transparent';
+	          context.strokeRect(rect.x, rect.y, rect.width, rect.height);
+	          context.font = '14px Helvetica';
+	          context.fillStyle = "#fff";
+	          context.drawImage(image, rect.x, rect.y, rect.width, rect.height);
+	          context.fillText('hito steyerl lecture ', rect.x + rect.width + 5, rect.y + 14);
+	          context.fillText('february 21 2018 6:00pm', rect.x + rect.width + 5, rect.y + 28);
+	          context.fillText('E.I.K. 26 edgewood', rect.x + rect.width + 5, rect.y + 42);
+
+	        });
+	      });
+
+	    };
+	  </script>
+
+
+
 
 </body>
 </html>

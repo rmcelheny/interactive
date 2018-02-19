@@ -29,7 +29,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 } else {
       var constraints = window.constraints = {
       audio: false,
-      video: false,
+      video: true,
     };
 }
 

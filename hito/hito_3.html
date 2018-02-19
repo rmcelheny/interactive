@@ -10,27 +10,41 @@
   	body {
   		overflow:hidden;
   		margin:none;
+  		background-color:lime;
   	}
+
+  	.container {
+	  	display:flex;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		position:fixed;
+		top:0;
+		left:0;
+		width:100vw;
+		height:100vh;	
+  	}
+
   	#gum-local {
-  		height:100vh;
-  		position:absolute;
-  		top:0;
-  		left:0;
+  		/*height:50vh;*/
   		z-index:-11111111;
   	}
   	#canvas {
+  		/*height:50vh;*/
   		z-index:111111;
-/*  		border:2px solid red;*/
+  		border:2px solid red;
   	}
 	</style>
 </head>
 
 <body>
 
-    <div id="container">
-       <video id="gum-local" preload autoplay loop muted playsinline></video>
+    <div class="container">
+       <video id="gum-local" width="640" height="480" preload autoplay loop muted playsinline></video>
     </div>
-    <canvas id="canvas"></canvas>
+    <div class="container">
+    	<canvas id="canvas"  width="640" height="480" ></canvas>
+    </div>
 
     <!-- IMAGES HERE -->
 	  <div class="image-container" style="opacity: 0;">
@@ -54,11 +68,14 @@
 	      var context = canvas.getContext('2d');
 	      var image = document.getElementById("image");
 
-	      // CANVAS SAME SIZE AS WINDOW
-	      var height = window.innerHeight;
-	      var width = window.innerWidth;
-	      canvas.height = height;
-	      canvas.width = width;
+
+	      // canvas same size as window
+			var positionInfo = video.getBoundingClientRect();
+			var height = positionInfo.height;
+			var width = positionInfo.width;
+
+			canvas.height = height;
+			canvas.width = width;
 
 	      // IMPLEMENT TRACKER
 	      var tracker = new tracking.ObjectTracker('face');

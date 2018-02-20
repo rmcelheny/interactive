@@ -4,7 +4,7 @@
 <html>
 <head>
 
-  <title>hito</title>
+  <title>H I T O</title>
   
   <style>
   	body {
@@ -27,13 +27,13 @@
 
   	#gum-local {
   		/*height:50vh;*/
-  		border:2px blue solid;
+  		/*border:2px blue solid;*/
   		z-index:-11111111;
-  		padding-bottom:130px;
+  		padding-bottom:150px;
   	}
   	#canvas {
   		/*height:50vh;*/
-  		border:2px red solid;
+/*  		border:2px red solid;*/
   		z-index:0;
   	}
 
@@ -64,8 +64,8 @@
     <div id="instr">* point camera at face *</div>
 
     <!-- IMAGES HERE -->
-	  <div class="image-container" style="opacity: 0;">
-	    <img id="image" src="hito.jpg">
+	 <div class="image-container" style="opacity: 0;">
+	    <img id="hito">
 	  </div>
 
 	  <!-- web RTC SCRIPTS -->
@@ -80,6 +80,9 @@
 
 		window.onload = function() {
 
+
+      
+
 				// hide instructions after 5s
 				var inst = document.getElementById('instr');
 				function disappear() {
@@ -88,10 +91,30 @@
 				setTimeout(disappear, 5000);
 
 			      // DEFINE VARIABLES
-			      var video = document.getElementById('gum-local');
-			      var canvas = document.getElementById('canvas');
-			      var context = canvas.getContext('2d');
-			      var image = document.getElementById("image");
+					var video = document.getElementById('video');
+					var canvas = document.getElementById('canvas');
+					var context = canvas.getContext('2d');
+					var hito = document.getElementById('hito');
+
+					var images = [
+						'assets/image_1.jpg',
+						'assets/image_2.jpg', 
+						'assets/image_3.jpg', 
+						'assets/image_4.jpg', 
+						'assets/image_5.jpg',
+						'assets/image_6.jpg', 
+						'assets/image_7.jpg'
+					];
+
+					var getRandomImage = function () {
+					return images[Math.floor(Math.random() * images.length)];
+					};
+
+					var image = getRandomImage();
+					console.log(image);
+
+					document.getElementById('hito').src = image;
+
 
 			      // IMPLEMENT TRACKER
 			      var tracker = new tracking.ObjectTracker('face');
@@ -105,15 +128,15 @@
 			        context.clearRect(0, 0, canvas.width, canvas.height);
 
 			      // DRAW TEXT/IMAGE WHEN RECOGNIZED
-			        event.data.forEach(function(rect) {
+			      event.data.forEach(function(rect) {
 			          context.strokeStyle = 'transparent';
 			          context.strokeRect(rect.x, rect.y, rect.width, rect.height);
-			          context.font = '18px Helvetica';
+			          context.font = '20px Helvetica';
 			          context.fillStyle = "#fff";
-			          context.drawImage(image, rect.x, rect.y, rect.width, rect.height);
-			          context.fillText('hito steyerl lecture ', rect.x + rect.width + 5, rect.y + 18);
-			          context.fillText('february 21 2018 6:00pm', rect.x + rect.width + 5, rect.y + 36);
-			          context.fillText('E.I.K. 26 edgewood', rect.x + rect.width + 5, rect.y + 54);
+			          context.drawImage(hito, rect.x, rect.y, rect.width, rect.height);
+			          context.fillText('hito steyerl lecture ', rect.x + rect.width + 5, rect.y + 20);
+			          context.fillText('february 21 2018 6:00pm', rect.x + rect.width + 5, rect.y + 40);
+			          context.fillText('E.I.K. 26 edgewood', rect.x + rect.width + 5, rect.y + 60);
 
 			        });
 			      });
